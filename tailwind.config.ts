@@ -9,7 +9,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
-    
+      colors: {
+        siteDefaultColor: '#09757a', // Replace with your desired color code
+      },
     },
   },
   plugins: [
