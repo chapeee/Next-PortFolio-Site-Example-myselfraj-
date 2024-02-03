@@ -1,13 +1,18 @@
 "use client";
 import Image from "next/image";
+import React, { useEffect } from 'react';
 import WeDeliver from "./Components/WeDeliver";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 export default function Home() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
-    <main className="w-100 bg-gray-100 text-black">
+    <main className="w-100 bg-gray-100 text-black" id="">
       <div className="w-full min-h-[100vh] sticky top-0 z-0">
         <div className="container md:pt-[140px] m-auto text-center relative">
-          <h1 className="md:text-6xl lg:text-7xl xlg:text-8xl">
+          <h1 className="md:text-6xl lg:text-[86px] xlg:text-8xl">
             Hi! I am <u>Rajneesh</u> AKA
             <span className="bg-siteDefaultColor text-white rounded-lg ml-4 pl-3 pr-3">
               Raj
@@ -15,7 +20,7 @@ export default function Home() {
             .
           </h1>
           <div className="mt-14">
-            <p className="lg:text-[20px] xlg:text-[25px] lg:max-w-[680px] xlg:max-w-[850px] m-auto ">
+            <p className="lg:text-[25px] xlg:text-[25px] lg:max-w-[780px] xlg:max-w-[850px] m-auto ">
               I engage in the art of creation, a visionary who believes in the
               power of building visionay products. See you on Mars 🚀..
             </p>
@@ -45,7 +50,7 @@ export default function Home() {
       <div className="z-[99] relative ">
         <div className="bg-siteDefaultColor text-white pt-14 pb-14 min-h-[100vh] flex justify-center">
             <div className="container m-auto">
-              <div className="text-8xl font-medium text-center">
+              <div className="text-8xl font-medium text-center" data-aos="zoom-in"  data-aos-once="true"  data-aos-delay="50"  data-aos-duration="700">
               Weaving Digital Marvels with Spider-Inspired Flair
               </div>
             </div>
