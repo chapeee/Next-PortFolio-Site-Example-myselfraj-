@@ -19,7 +19,7 @@ export default function RootLayout({
       <body className={inter.className} >
 
 
-        <nav className="bg-gray-100 border-gray-200 dark:bg-gray-900">
+        <nav className="bg-gray-100 border-gray-200 dark:bg-gray-900 sticky z-[999] top-[0px]">
           <div className="container flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="https://flowbite.com/" className="flex items-center  rtl:space-x-reverse font-italic text-italic text-3xl font-bold italic  text-siteDefaultColor">
              Raj.
