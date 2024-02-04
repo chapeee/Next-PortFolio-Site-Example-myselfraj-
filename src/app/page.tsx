@@ -1,9 +1,12 @@
 "use client";
 import Image from "next/image";
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 import WeDeliver from "./Components/WeDeliver";
-import AOS from 'aos';
-import 'aos/dist/aos.css'; 
+import AOS from "aos";
+import "aos/dist/aos.css";
+import HomeWriting from "./Components/HomeWriting";
+import HomeLearn from "./Components/HomeLearn";
+import Technology from "./Components/Technology";
 export default function Home() {
   useEffect(() => {
     AOS.init();
@@ -14,7 +17,7 @@ export default function Home() {
         <div className="container md:pt-[140px] m-auto text-center relative">
           <h1 className="md:text-6xl lg:text-[86px] xlg:text-8xl">
             Hi! I am <u>Rajneesh</u> AKA
-            <span className="bg-siteDefaultColor text-white rounded-lg ml-4 pl-3 pr-3">
+            <span className="text-siteDefaultColor font-bold mt-10 rounded-lg ml-4 pl-3 pr-3">
               Raj
             </span>
             .
@@ -47,20 +50,74 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="z-[99] relative ">
+      <div className="z-[99] relative bg-gray-100">
         <div className="bg-siteDefaultColor text-white pt-14 pb-14 min-h-[100vh] flex justify-center">
-            <div className="container m-auto">
-              <div className="text-8xl font-medium text-center" data-aos="zoom-in"  data-aos-once="true"  data-aos-delay="50"  data-aos-duration="700">
+          <div className="container m-auto">
+            <div
+              className="text-8xl font-medium text-center"
+              data-aos="zoom-in"
+              data-aos-once="true"
+              data-aos-delay="50"
+              data-aos-duration="700"
+            >
               Weaving Digital Marvels with Spider-Inspired Flair
-              </div>
             </div>
+          </div>
         </div>
-        <div id="starthere" className="container m-auto pt-[100px] bg-gray-100">
-          <div >
+        <div
+          id="starthere"
+          className="container m-auto pt-[100px] bg-gray-100  "
+        >
+          <div className="">
             <WeDeliver />
           </div>
         </div>
       </div>
+      <div className="p-[50px] bg-gray-100 relative  z-[9]"></div>
+      <div className="sticky top-0 z-0">
+      <div className="relative min-h-[100vh] flex justify-center items-center z-[9999] overflow-hidden">
+        <video
+          autoPlay
+          loop
+          muted
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source
+            src="https://ik.imagekit.io/mq90sdk8y/myselfraj/spacevide.mp4?updatedAt=1707024058330"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+
+        <div className="absolute inset-0 bg-black bg-opacity-85 text-white flex flex-col items-center justify-center">
+          <div className="container mx-auto">
+            <div
+              className="text-8xl font-medium text-center"
+              data-aos="zoom-in"
+              data-aos-once="true"
+              data-aos-delay="50"
+              data-aos-duration="700"
+            >
+              Browse more achievements from my crafted creations.
+            </div>
+            <div className="w-full flex justify-center items-center mt-14 pt-14">
+              <a
+                href="/projects"
+                className="hover:cursor-pointer rounded-full bg-siteDefaultColor text-white h-[170px] w-[170px]  flex items-center justify-center text-[28px] text-center font-medium"
+              >
+                View Projects
+              </a>
+            </div>
+          </div>
+        </div></div>
+      </div>
+
+      <Technology />
+      <HomeWriting />
+      <div className="">
+      <HomeLearn />
+      </div>
+      
     </main>
   );
 }
