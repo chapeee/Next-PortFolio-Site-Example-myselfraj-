@@ -50,8 +50,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="z-[99] relative bg-gray-100">
-        <div className="bg-siteDefaultColor text-white pt-14 pb-14 min-h-[100vh] flex justify-center">
+      <div className="z-[999] relative bg-gray-100">
+        <div className="bg-siteDefaultColor text-white pt-14 pb-14 min-h-[100vh] flex justify-center ">
           <div className="container m-auto">
             <div
               className="text-8xl font-medium text-center"
@@ -64,15 +64,16 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div
+       
+      </div>
+      <div
           id="starthere"
-          className="container m-auto pt-[100px] bg-gray-100  "
+          className="container m-auto pt-[100px] bg-gray-100 z-[99] relative "
         >
           <div className="">
             <WeDeliver />
           </div>
         </div>
-      </div>
       <div className="p-[50px] bg-gray-100 relative  z-[9]"></div>
       <div className="sticky top-0 z-0">
       <div className="relative min-h-[100vh] flex justify-center items-center z-[9999] overflow-hidden">

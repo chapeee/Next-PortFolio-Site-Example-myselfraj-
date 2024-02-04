@@ -6,7 +6,7 @@ export default function Technology() {
       <div className="container m-auto pt-[100px] pb-[100px]">
         <div className="">
           <h2 className="text-4xl md:text-4xl lg:text-6xl font-medium md:mb-10 leading-[150%]  max-w-[800px]">
-            Metafy - Get coached by the best players in the world.
+           Technology: The technology I work on is cutting-edge and innovative 
           </h2>
         </div>
         <div className="mt-[100px]">

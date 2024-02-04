@@ -70,10 +70,13 @@ export default function WeDeliver() {
       <div className="container  m-auto p-14 ">
         <div className="p-5 grid grid-cols-1 md:grid-cols-2 md:gap-[70px] lg:gap-[220px]">
           <div className="relative md:sticky md:top-[100px] md:h-[700px] lg:h-[600px]">
-            <h2 className="text-4xl md:text-4xl lg:text-5xl font-medium md:mb-14 leading-[110%] md:leading-[140%]">
+            <h2 className="text-4xl md:text-4xl lg:text-5xl font-medium  leading-[110%] md:leading-[140%]">
             <span className="border-b-2 border-transparent border-siteDefaultColor ">Crafted Creations: </span><br /> 
-            <div className="mt-8 text-3xl">My Unique Project Achievements</div>
+            <div className="mt-4 text-3xl">My Unique Project Achievements</div>
+          
             </h2>
+            <div className="mb-8 mt-5 underline"> <a className="text-[18px]" href="/project">View All</a> </div>
+           
             <div className="mockup-window border border-gray-600">
             <Image
               id="leftImage"

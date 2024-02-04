@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Playfair_Display } from "next/font/google";
 import "./globals.css";
+import Newsletter from "./Components/Newsletter";
 
 const inter = Playfair_Display({ subsets: ["latin"] });
 
@@ -37,7 +38,7 @@ export default function RootLayout({
                   <a href="#" className="block py-2 px-3 text-gray-700 hover:bg-gray-100 border-b-2 border-transparent hover:border-siteDefaultColor hover:text-siteDefaultColor ">Learn</a>
                 </li>
                 <li>
-                  <a href="#" className="block py-2 px-3 text-gray-700 hover:bg-gray-100 border-b-2 border-transparent hover:border-siteDefaultColor hover:text-siteDefaultColor ">Projects</a>
+                  <a href="#" className="block py-2 px-3 text-gray-700 hover:bg-gray-100 border-b-2 border-transparent hover:border-siteDefaultColor hover:text-siteDefaultColor ">Open Source</a>
                 </li>
                 <li>
                   <a href="#" className="block py-2 px-3 text-gray-700 hover:bg-gray-100 border-b-2 border-transparent hover:border-siteDefaultColor hover:text-siteDefaultColor ">Writings</a>
@@ -54,6 +55,11 @@ export default function RootLayout({
         </nav>
 
         {children}
+        <Newsletter />
+        <div className="bg-white w-full text-center pb-14">
+        <a href="https://www.linkedin.com/in/iamrajneesh/" className="text-2xl font-medium underline text-black">Follow on Linkedin</a>
+        </div>
+      
       </body>
     </html>
   );
