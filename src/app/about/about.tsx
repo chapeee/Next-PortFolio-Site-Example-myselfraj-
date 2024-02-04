@@ -48,14 +48,14 @@ export default function About() {
             welcome sound that made my day. Ah, and let's not forget the classic
             Samsung monitor. The first thing I did when I powered it on?
             Embarked on wild adventures in GTA Vice City. As a kid, navigating
-            the map was a challenge, but my sister became my guide—turn she used
-            to help me turn right, turn left. Oh, what lovely days those were!
+            the map was a challenge, but my sister became my guide— she used
+            to help me with navigation turn right, turn left, go straight. Oh, what lovely days those were!
           </p>
         </div>
         <div className="mt-10">
           <h2 className="text-[24px] font-bold text-left mb-3">How i Became Computer Bug</h2>
           <p className="text-[20px]">
-          Back in 5th grade, one day, my dad, who was in the army, walked in with a mysterious book titled something like "Learn Command Prompt." He unfolded the secrets of the terminal—opening it, creating directories, diving into them, making files, typing away in them, saving changes, and doing all sorts of cool stuff. I was utterly fascinated! Excitedly, I went to school the next day, showing off my newfound skills to friends by typing commands on a black screen. They were like, "Whoa, how do you know all this?"
+          Back in 5th grade, one day, my dad, who was in the army, walked in with a mysterious book titled something like "Learn Command Prompt." He unfolded the secrets of the terminal—opening it, creating directories, diving into them, making files, typing into files, saving changes, and doing all sorts of cool stuff on command prompt(Terminal) I was utterly fascinated! Excitedly, I went to school the next day, showing off my newfound skills to friends by typing commands on a black screen. They were like, "Whoa, how do you know all this?"
 <div className="mt-5">
 Then, in 6th grade, I crossed paths with a senior from 12th grade who handed me his HTML notes. I got my hands on it, dabbled with the codes, and voila! I crafted my very first HTML, a simple college website page. And that, my friend, is how I got hooked on coding and turned into a computer bug!
 </div>

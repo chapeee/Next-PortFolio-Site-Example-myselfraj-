@@ -1,11 +1,11 @@
 import React from 'react'
-import OpenSource from './open-source';
+import Projects from './projects';
 
 
 export default function page() {
   return (
     <div>
-        <OpenSource />
+        <Projects />
     </div>
   )
 }

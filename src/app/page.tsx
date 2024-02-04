@@ -52,9 +52,9 @@ export default function Home() {
       </div>
       <div className="z-[999] relative bg-gray-100">
         <div className="bg-siteDefaultColor text-white pt-14 pb-14 min-h-[100vh] flex justify-center ">
-          <div className="container m-auto p-5">
+          <div className="container m-auto p-5 pt-0 pb-0">
             <div
-              className="text-6xl lg:text-8xl font-medium text-center leading-[110%]"
+              className="text-6xl lg:text-8xl font-medium text-center " style={{lineHeight:"120%"}}
               data-aos="zoom-in"
               data-aos-once="true"
               data-aos-delay="50"
@@ -90,10 +90,10 @@ export default function Home() {
           Your browser does not support the video tag.
         </video>
 
-        <div className="absolute inset-0 bg-black bg-opacity-85 text-white flex flex-col items-center justify-center">
+        <div className="absolute inset-0 bg-black bg-opacity-80 text-white flex flex-col items-center justify-center">
           <div className="container mx-auto p-5">
             <div
-              className="text-6xl lg:text-8xl lg:text-8xl font-medium text-center"
+              className="text-6xl lg:text-8xl lg:text-8xl font-medium text-center" style={{lineHeight:"120%"}}
               data-aos="zoom-in"
               data-aos-once="true"
               data-aos-delay="50"
@@ -106,7 +106,7 @@ export default function Home() {
                 href="/projects"
                 className="hover:cursor-pointer rounded-full bg-siteDefaultColor text-white h-[170px] w-[170px]  flex items-center justify-center text-[28px] text-center font-medium"
               >
-                View Projects
+                View all Projects
               </a>
             </div>
           </div>

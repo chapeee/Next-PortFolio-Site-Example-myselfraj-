@@ -69,7 +69,7 @@ export default function WeDeliver() {
       
       <div className="container  m-auto p-5 md:p-14 ">
         <div className="p-5 grid grid-cols-1 md:grid-cols-2 md:gap-[70px] lg:gap-[220px]">
-          <div className="relative md:sticky md:top-[100px] md:h-[700px] lg:h-[600px]">
+          <div className="relative md:sticky md:top-[100px] md:h-[700px] lg:h-[500px]">
             <h2 className="text-4xl md:text-4xl lg:text-5xl font-medium  leading-[110%] md:leading-[140%]">
             <span className="border-b-2 border-transparent border-siteDefaultColor ">Crafted Creations: </span><br /> 
             <div className="mt-4 text-3xl">My Unique Project Achievements</div>
@@ -212,7 +212,7 @@ export default function WeDeliver() {
               loading="lazy"
             />
             <div
-              className="pt-7 pb-14 md:pb-[250px] duration-300"
+              className="pt-7 pb-14 md:pb-[150px] duration-300"
               id="Alleviate"
               style={{ opacity: opacityAlleviate }}
             >
@@ -222,6 +222,7 @@ export default function WeDeliver() {
               <p className="text-[18px]">
               I made a TV app for a company (can't say the name). I designed it and assisted the developers in getting channels and playing both channels and movies. My main focus was on making sure the player could handle subtitles during video playback, playing video and managing the subscription same as Netflix.com.
               </p>
+
               <div className="grid gap-1 grid-cols-3 mt-8">
                 <div>
                     <div className="text-[16px] text-gray-700 font-bold">Project</div>
@@ -241,6 +242,15 @@ export default function WeDeliver() {
                     <div className="text-[16px] text-gray-700 font-bold">Tech</div>
                     <div className="text-[18px] text-black pt-1">React Native, Adbobe Xd and Stripe</div>
                 </div>
+                <div className="container m-auto flex justify-center mt-14">
+                <a
+                href="/projects"
+                className="mt-10 hover:cursor-pointer rounded-full bg-siteDefaultColor text-white h-[120px] w-[120px]  flex items-center justify-center text-[20px] text-center font-medium"
+              >
+                View all Projects
+              </a>
+                </div>
+                
             </div>
             
             

@@ -49,8 +49,8 @@ export default function Header() {
                 <li>
                 <a
                   href="/about"
-                  className={`block py-2 px-3 text-gray-700 border-transparent hover:bg-gray-100  border-b-2 hover:border-siteDefaultColor hover:text-siteDefaultColor ${
-                    isLinkActive('/about') ? ' border-[#09757a] font-bold text-siteDefaultColor' : ''
+                  className={`block py-2 px-3 text-gray-700 hover:bg-gray-100  border-b-2 hover:border-siteDefaultColor hover:text-siteDefaultColor ${
+                    isLinkActive('/about') ? ' border-[#09757a]  font-bold text-siteDefaultColor' : 'border-transparent '
                   }`}
                 >
                     About Me
@@ -59,8 +59,8 @@ export default function Header() {
                 <li>
                 <a
                   href="/learn"
-                  className={`block py-2 px-3 text-gray-700 border-transparent hover:bg-gray-100  border-b-2 hover:border-siteDefaultColor hover:text-siteDefaultColor ${
-                    isLinkActive('/learn') ? ' border-[#09757a] font-bold text-siteDefaultColor' : ''
+                  className={`block py-2 px-3 text-gray-700 hover:bg-gray-100  border-b-2 hover:border-siteDefaultColor hover:text-siteDefaultColor ${
+                    isLinkActive('/learn') ? ' border-[#09757a] font-bold text-siteDefaultColor' : 'border-transparent '
                   }`}
                 >
                     Learn
@@ -68,12 +68,12 @@ export default function Header() {
                 </li>
                 <li>
                 <a
-                  href="/open-source"
-                  className={`block py-2 px-3 text-gray-700 border-transparent hover:bg-gray-100  border-b-2 hover:border-siteDefaultColor hover:text-siteDefaultColor ${
-                    isLinkActive('/open-source') ? ' border-[#09757a] font-bold text-siteDefaultColor' : ''
+                  href="/projects"
+                  className={`block py-2 px-3 text-gray-700  hover:bg-gray-100  border-b-2 hover:border-siteDefaultColor hover:text-siteDefaultColor ${
+                    isLinkActive('/projects') ? ' border-[#09757a] font-bold text-siteDefaultColor' : 'border-transparent'
                   }`}
                 >
-                    Open Source
+                    Projects
                   </a>
                 </li>
                 <li>

@@ -8,10 +8,10 @@ export default function LearnTech() {
           Learn Like Pro...
         </h2>
         <h2 className="pt-3 md:ml-14 text-4xl md:text-4xl lg:text-5xl font-medium  leading-[110%] md:leading-[140%]">
-          Do you want to learn code?
+          Intrested to learn code?
         </h2>
         <h2 className="pt-3 md:ml-0 text-4xl md:text-4xl lg:text-5xl font-medium  leading-[110%] md:leading-[140%]">
-          Do you want to know about new tech?
+          Want to know about new tech?
         </h2>
        <p className="text-[20px] mt-10 -mb-[80px]"><b className="text-[red] ">Coming soon!</b> I'm crafting technology insights just for you. As soon as the latest knowledge is ready to hit the public stage, we'll shoot you an email. Stay in the loop by subscribing to our newsletter to stay informed and up-to-date.</p>
 
