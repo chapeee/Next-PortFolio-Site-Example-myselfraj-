@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function HomeWriting() {
   return (
     <div className="w-full z-[9] bg-gray-100 relative">
-      <div className="container m-auto pt-[100px] pb-[100px] max-w-[1000px]">
+      <div className="container p-5 m-auto pt-[100px] pb-[100px] lg:max-w-[1000px]">
         <div className="grid grid-cols-3 lg:gap-[30px]">
           <div className="col-span-1">
             <h2 className="text-4xl md:text-4xl lg:text-5xl font-medium mb-6 leading-[110%] md:leading-[140%]">
@@ -15,7 +15,7 @@ export default function HomeWriting() {
             </a>
           </div>
           <div className="col-span-3">
-            <div className="grid grid-cols-2 md:gap-[40px]">
+            <div className="grid grid-cols-1 md:grid-cols-2 md:gap-[40px] gap-7">
               <div className="mt-5">
                 <Image
                   id="leftImage"

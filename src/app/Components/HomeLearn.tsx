@@ -5,8 +5,8 @@ import Image from "next/image";
 export default function HomeLearn() {
   return (
     <div className="w-full z-[9] bg-gray-100 relative">
-      <div className="container m-auto pt-[100px] pb-[100px] max-w-[1000px]">
-        <div className="grid grid-cols-2 gap-7">
+      <div className="container p-5 m-auto pt-[0px] md:pt-[100px] pb-[100px] lg:max-w-[1000px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-7">
           <div className="mb-7">
             <h2 className="text-4xl md:text-4xl lg:text-5xl font-medium mb-3 leading-[110%] md:leading-[140%]">
               Learn With Me: 
@@ -20,7 +20,7 @@ export default function HomeLearn() {
               <u>Learn  More</u>
             </a>
           </div>
-          <div className="grid grid-cols-2 gap-10">
+          <div className="grid  md:grid-cols-1 lg:grid-cols-2 gap-10">
             <Image
               src="https://ik.imagekit.io/mq90sdk8y/myselfraj/nextjs.png?updatedAt=1707031375640"
               width={0}

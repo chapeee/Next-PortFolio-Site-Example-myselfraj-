@@ -13,22 +13,22 @@ export default function Home() {
   }, []);
   return (
     <main className="w-100 bg-gray-100 text-black" id="">
-      <div className="w-full min-h-[100vh] sticky top-0 z-0">
-        <div className="container md:pt-[140px] m-auto text-center relative">
-          <h1 className="md:text-6xl lg:text-[86px] xlg:text-8xl">
+      <div className="w-full min-h-[600px] md:min-h-[100vh] sticky top-0 z-0">
+        <div className="container p-5 pt-[70px] md:pt-[140px] m-auto text-center relative">
+          <h1 className="text-[52px] md:text-6xl lg:text-[86px] xlg:text-8xl leading-[120%]">
             Hi! I am <u>Rajneesh</u> AKA
             <span className="text-siteDefaultColor font-bold mt-10 rounded-lg ml-4 pl-3 pr-3">
               Raj
             </span>
             .
           </h1>
-          <div className="mt-14">
+          <div className="mt-7 md:mt-14">
             <p className="lg:text-[25px] xlg:text-[25px] lg:max-w-[780px] xlg:max-w-[850px] m-auto ">
               I engage in the art of creation, a visionary who believes in the
               power of building visionay products. See you on Mars 🚀..
             </p>
           </div>
-          <div className="bg-gray-50 p-5 mt-14 lg:max-w-[700px] xlg:max-w-[800px] m-auto">
+          <div className="bg-gray-50 p-5 mt-7 md:mt-14 lg:max-w-[700px] xlg:max-w-[800px] m-auto">
             <div className="grid grid-cols-4 gap-4">
               <div>
                 <div className="text-5xl">67</div>
@@ -52,9 +52,9 @@ export default function Home() {
       </div>
       <div className="z-[999] relative bg-gray-100">
         <div className="bg-siteDefaultColor text-white pt-14 pb-14 min-h-[100vh] flex justify-center ">
-          <div className="container m-auto">
+          <div className="container m-auto p-5">
             <div
-              className="text-8xl font-medium text-center"
+              className="text-6xl lg:text-8xl font-medium text-center leading-[110%]"
               data-aos="zoom-in"
               data-aos-once="true"
               data-aos-delay="50"
@@ -91,9 +91,9 @@ export default function Home() {
         </video>
 
         <div className="absolute inset-0 bg-black bg-opacity-85 text-white flex flex-col items-center justify-center">
-          <div className="container mx-auto">
+          <div className="container mx-auto p-5">
             <div
-              className="text-8xl font-medium text-center"
+              className="text-6xl lg:text-8xl lg:text-8xl font-medium text-center"
               data-aos="zoom-in"
               data-aos-once="true"
               data-aos-delay="50"
