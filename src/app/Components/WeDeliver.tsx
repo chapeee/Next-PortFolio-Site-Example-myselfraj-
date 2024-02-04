@@ -85,8 +85,8 @@ export default function WeDeliver() {
               className="hidden md:block"
               style={{
                 width: "100%",
-                height: "360px",
-                objectFit: "cover",
+                height: "100%",
+                objectFit: "contain",
                 borderRadius: "8px",
               }}
               loading="lazy"
