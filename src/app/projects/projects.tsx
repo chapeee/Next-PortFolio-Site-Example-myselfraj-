@@ -273,9 +273,7 @@ export default function Projects() {
                 </div>
 
                 <div className="flex flex-wrap lg:flex-nowrap lg:flex-col flex-row lg:gap-o gap-4 lg:gap-0 items-start lg:items-end lg:mt-0 mt-10">
-                  <div className="text-[18px] bg-transparent text-gray-700 border-gray-500 border  p-2 pl-5 pr-5 rounded-full">
-                    Raspberry Pi
-                  </div>
+                  
                   <div className="text-[18px] lg:mt-5 bg-transparent text-gray-700 border-gray-500 border  p-2 pl-5 pr-5 rounded-full">
                     CI/PHP/Python
                   </div>

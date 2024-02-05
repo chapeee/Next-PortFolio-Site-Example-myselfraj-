@@ -31,7 +31,7 @@ export default function Home() {
           <div className="bg-gray-50 p-5 mt-7 md:mt-14 lg:max-w-[700px] xlg:max-w-[800px] m-auto">
             <div className="grid grid-cols-4 gap-4">
               <div>
-                <div className="text-5xl">67</div>
+                <div className="text-5xl">100+</div>
                 <div className="text-1xl font-medium pt-3">Total Projects</div>
               </div>
               <div>
@@ -39,11 +39,11 @@ export default function Home() {
                 <div className="text-1xl font-medium pt-3">Total Clients</div>
               </div>
               <div>
-                <div className="text-5xl">3</div>
+                <div className="text-5xl">1</div>
                 <div className="text-1xl font-medium pt-3">Open Sources</div>
               </div>
               <div>
-                <div className="text-5xl">10</div>
+                <div className="text-5xl">3</div>
                 <div className="text-1xl font-medium pt-3">Own Projects</div>
               </div>
             </div>

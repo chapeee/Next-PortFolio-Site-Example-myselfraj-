@@ -67,10 +67,10 @@ export default function WeDeliver() {
   return (
     <div className="bg-white text-black w-full">
       
-      <div className="container  m-auto p-5 md:p-14 ">
+      <div className="container  m-auto p-5 md:p-5 lg:p-14 ">
         <div className="p-5 grid grid-cols-1 md:grid-cols-2 md:gap-[70px] lg:gap-[220px]">
-          <div className="relative md:sticky md:top-[100px] md:h-[700px] lg:h-[550px]">
-            <h2 className="text-4xl md:text-4xl lg:text-5xl font-medium  leading-[110%] md:leading-[140%]">
+          <div className="relative md:sticky md:top-[100px] md:h-[550px] lg:h-[620px]">
+            <h2 className="text-3xl  md:text-3xl lg:text-5xl font-medium  leading-[110%] md:leading-[140%]">
             <span className="border-b-2 border-transparent border-siteDefaultColor ">Crafted Creations: </span><br /> 
             <div className="mt-4 text-3xlf">My Unique Project Achievements</div>
           
