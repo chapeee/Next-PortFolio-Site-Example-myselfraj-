@@ -77,11 +77,13 @@ export default function Header() {
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="#"
-                    className="block py-2 px-3 text-gray-700 hover:bg-gray-100 border-b-2 border-transparent hover:border-siteDefaultColor hover:text-siteDefaultColor "
-                  >
-                    Writings
+                <a
+                  href="/writings"
+                  className={`block py-2 px-3 text-gray-700  hover:bg-gray-100  border-b-2 hover:border-siteDefaultColor hover:text-siteDefaultColor ${
+                    isLinkActive('/projects') ? ' border-[#09757a] font-bold text-siteDefaultColor' : 'border-transparent'
+                  }`}
+                >
+                    My Writings
                   </a>
                 </li>
                 
