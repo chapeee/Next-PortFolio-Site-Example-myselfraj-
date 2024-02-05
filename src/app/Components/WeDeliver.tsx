@@ -192,7 +192,7 @@ export default function WeDeliver() {
               </div>
               <div className="mt-4">
                     <div className="text-[16px] text-gray-700 font-bold">Tech</div>
-                    <div className="text-[18px] text-black pt-1">Next, MongoDb, Python, Raspberry Pi, Git, and Bs</div>
+                    <div className="text-[18px] text-black pt-1">Nuxt/Vue, MongoDb, Python, Raspberry Pi, Git, and Bs</div>
                 </div>
             </div>
             <Image
@@ -240,7 +240,7 @@ export default function WeDeliver() {
               </div>
               <div className="mt-4">
                     <div className="text-[16px] text-gray-700 font-bold">Tech</div>
-                    <div className="text-[18px] text-black pt-1">React Native, Adbobe Xd and Stripe</div>
+                    <div className="text-[18px] text-black pt-1">React, Adbobe Xd, AWS Transcoder and Stripe</div>
                 </div>
                 <div className="container m-auto flex justify-center mt-14">
                 <a
