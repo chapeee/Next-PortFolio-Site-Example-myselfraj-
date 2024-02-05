@@ -84,20 +84,13 @@ export default function Header() {
                     Writings
                   </a>
                 </li>
+                
                 <li>
-                  <a
-                    href="#"
-                    className="block py-2 px-3 text-gray-700 hover:bg-gray-100 border-b-2 border-transparent hover:border-siteDefaultColor hover:text-siteDefaultColor "
-                  >
-                    Projects
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
+                  <a target='blank'
+                    href="https://calendly.com/myselfraj/30min"
                     className="block py-2 px-3  text-white bg-siteDefaultColor rounded-full pl-4 pr-4 border border-b-1 hover:border hover:border-b-1 hover:border-siteDefaultColor hover:bg-white hover:text-siteDefaultColor"
                   >
-                    Contact Me
+                   Lets Chat
                   </a>
                 </li>
               </ul>
