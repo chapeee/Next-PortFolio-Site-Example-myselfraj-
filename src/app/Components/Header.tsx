@@ -14,7 +14,9 @@ export default function Header() {
           <div className="container flex flex-wrap items-center justify-between mx-auto p-4">
             <a
               href="/"
-              className="flex items-center  rtl:space-x-reverse font-italic text-italic text-3xl font-bold italic  border-siteDefaultColor border-4 rounded-full"
+              className={`flex items-center  rtl:space-x-reverse font-italic text-italic text-3xl font-bold italic border-4 rounded-full  ${
+                isLinkActive('/') ? ' border-siteDefaultColor ' : 'border-white '
+              }`}
             >
               <Image
                 src="https://ik.imagekit.io/mq90sdk8y/myselfraj/rajneesh.jpeg?updatedAt=1707033590888"
@@ -80,7 +82,7 @@ export default function Header() {
                 <a
                   href="/writings"
                   className={`block py-2 px-3 text-gray-700  hover:bg-gray-100  border-b-2 hover:border-siteDefaultColor hover:text-siteDefaultColor ${
-                    isLinkActive('/projects') ? ' border-[#09757a] font-bold text-siteDefaultColor' : 'border-transparent'
+                    isLinkActive('/writings') ? ' border-[#09757a] font-bold text-siteDefaultColor' : 'border-transparent'
                   }`}
                 >
                     My Writings
