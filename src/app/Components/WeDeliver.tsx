@@ -245,7 +245,7 @@ export default function WeDeliver() {
                 <div className="container m-auto flex justify-center mt-14">
                 <a
                 href="/projects"
-                className="mt-10 hover:cursor-pointer rounded-full bg-siteDefaultColor text-white h-[120px] w-[120px]  flex items-center justify-center text-[20px] text-center font-medium"
+                className="mt-10 hover:cursor-pointer rounded-full bg-siteDefaultColor text-white h-[150px] w-[150px] p-4 flex items-center justify-center text-[20px] text-center font-medium"
               >
                 View all Projects
               </a>
