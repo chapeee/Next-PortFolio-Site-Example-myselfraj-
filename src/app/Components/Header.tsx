@@ -15,7 +15,7 @@ export default function Header() {
             <a
               href="/"
               className={`flex items-center  rtl:space-x-reverse font-italic text-italic text-3xl font-bold italic border-4 rounded-full  ${
-                isLinkActive('/') ? ' border-siteDefaultColor ' : 'border-white '
+                isLinkActive('/') ? ' border-siteDefaultColor ' : 'border-gray-100 '
               }`}
             >
               <Image

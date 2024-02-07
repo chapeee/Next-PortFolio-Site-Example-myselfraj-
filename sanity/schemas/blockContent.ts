@@ -1,4 +1,4 @@
-import {defineType, defineArrayMember} from 'sanity'
+import {defineType, defineArrayMember,defineField} from 'sanity'
 
 /**
  * This is the schema type for block content used in the post document type
@@ -11,7 +11,7 @@ import {defineType, defineArrayMember} from 'sanity'
  *  }
  */
 
-export default defineType({
+export default defineType({ 
   title: 'Block Content',
   name: 'blockContent',
   type: 'array',
@@ -70,6 +70,11 @@ export default defineType({
           title: 'Alternative Text',
         }
       ]
+    }),
+    defineField({
+      type: 'code',
+      name: 'codefield',
+      title: 'Insert Code',
     }),
   ],
 })
