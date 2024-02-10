@@ -1,7 +1,7 @@
 
 import { usePathname  } from 'next/navigation';
-const isLinkActive = (href : any) => {
+const IsLinkActive = (href : any) => {
     return usePathname() === href;
   };
 
-  export default isLinkActive
+  export default IsLinkActive

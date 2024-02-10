@@ -5,7 +5,7 @@ export default function Newsletter() {
   const [email, setEmail] = useState("");
   const [loading, setLoading] = useState(false);
   const [subscribed, setSubscribed] = useState(false);
-  const [subscribedEmail, setSubscribedEmail] = useState(null);
+  const [subscribedEmail, setSubscribedEmail] = useState('');
   const [subscriptionAttempted, setSubscriptionAttempted] = useState(false);
   const [subscriptionSuccess, setSubscriptionSuccess] = useState(false);
 
@@ -71,7 +71,7 @@ export default function Newsletter() {
     }
   };
 
-  const handleEmailChange = (event) => {
+  const handleEmailChange = (event : any) => {
     setEmail(event.target.value);
   };
 
@@ -85,7 +85,7 @@ export default function Newsletter() {
       <div className="w-full bg-white text-black pt-[100px] pb-[100px]">
         <div className="container p-5 m-auto text-center">
           <h2 className="text-4xl font-medium">😊 Cool! You are Already Subscribed</h2>
-          <p className="mt-2">You're signed up with the email address: {subscribedEmail}</p>
+          <p className="mt-2">You&apos;re signed up with the email address: {subscribedEmail}</p>
           <p className="text-gray-500 text-[14px] pt-2">
             If you find this as a mistake:{" "}
             <span className="text-black underline " onClick={handleUpdateEmail}>Update Email</span>
@@ -110,7 +110,7 @@ export default function Newsletter() {
       <div className="container p-5 m-auto text-center">
         <h2 className="text-4xl font-medium">Join my newsletter</h2>
         <p className="text-[18px] max-w-[700px] m-auto mt-5">
-          By joining my newsletter, you'll receive updates on the latest
+          By joining my newsletter, you&apos;ll receive updates on the latest
           technology news and have the opportunity to learn more about coding.
         </p>
         <div className="md:join mt-10">

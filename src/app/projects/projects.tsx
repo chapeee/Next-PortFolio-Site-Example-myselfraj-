@@ -9,13 +9,13 @@ export default function Projects() {
             Projects
           </h2>
           <p className="text-[18px] mt-7">
-            So far, I've been a part of more than 100 projects. However, for my
-            freelance work, I'll be focusing on 67 projects. These include
-            various projects I've done for companies or clients. I've listed my
+            So far, I&quot;ve been a part of more than 100 projects. However, for my
+            freelance work, I&quot;ll be focusing on 67 projects. These include
+            various projects I&quot;ve done for companies or clients. I&quot;ve listed my
             top projects, covering everything about them – from the technologies
             used to the roles I played. This includes personal projects like
-            open source work, ones I've sold, ongoing projects, and client
-            projects. Additionally, I've highlighted some of my most favorite
+            open source work, ones I&quot;ve sold, ongoing projects, and client
+            projects. Additionally, I&quot;ve highlighted some of my most favorite
             projects in this collection.
           </p>
         </div>{" "}
@@ -118,7 +118,7 @@ export default function Projects() {
               <div className="flex lg:justify-between flex-col lg:flex-row">
                 <div className="max-w-[750px]">
                   <span className="text-[18px] text-gray-700">
-                    Client's Project
+                    Client&quot;s Project
                   </span>
                   <div
                     className="text-4xl lg:text-[52px] font-medium  text-left"
@@ -221,7 +221,7 @@ export default function Projects() {
               <div className="flex lg:justify-between flex-col lg:flex-row">
                 <div className="max-w-[750px]">
                   <span className="text-[18px] text-gray-700">
-                    Client's Project
+                    Client&apos;s Project
                   </span>
                   <div
                     className="text-4xl lg:text-[52px] font-medium  text-left"
@@ -321,7 +321,7 @@ export default function Projects() {
               <div className="flex lg:justify-between flex-col lg:flex-row">
                 <div className="max-w-[750px]">
                   <span className="text-[18px] text-gray-300">
-                    Client's Project
+                    Client&quot;s Project
                   </span>
                   <div
                     className="text-4xl lg:text-[52px] font-medium  text-left"
@@ -419,7 +419,7 @@ export default function Projects() {
               <div className="flex lg:justify-between flex-col lg:flex-row">
                 <div className="max-w-[750px]">
                   <span className="text-[18px] text-gray-700">
-                    Client's Project
+                    Client&quot;s Project
                   </span>
                   <div
                     className="text-4xl lg:text-[52px] font-medium  text-left"
@@ -524,7 +524,7 @@ export default function Projects() {
               <div className="flex lg:justify-between flex-col lg:flex-row">
                 <div className="max-w-[750px]">
                   <span className="text-[18px] text-gray-300">
-                    Client's Project
+                    Client&quot;s Project
                   </span>
                   <div
                     className="text-4xl lg:text-[52px] font-medium  text-left"
@@ -533,8 +533,8 @@ export default function Projects() {
                     Make My Post:
                   </div>
                   <p className="mt-5 text-[18px] text-gray-200">
-                    "Make My Post" one of the best apps for creating Indian
-                    festival posters. I worked on improving the app's appearance
+                  &quot;Make My Post&quot; one of the best apps for creating Indian
+                    festival posters. I worked on improving the app&quot;s appearance
                     (UI) and added features for user support through chat.
                   </p>
 
@@ -618,7 +618,7 @@ export default function Projects() {
               <div className="flex lg:justify-between flex-col lg:flex-row">
                 <div className="max-w-[750px]">
                   <span className="text-[18px] text-gray-600">
-                    Client's Project
+                    Client&apos;s Project
                   </span>
                   <div
                     className="text-4xl lg:text-[52px] font-medium  text-left"

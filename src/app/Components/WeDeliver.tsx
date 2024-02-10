@@ -221,7 +221,7 @@ export default function WeDeliver() {
                Tv App
               </h3>
               <p className="text-[18px]">
-              I made a TV app for a company (can't say the name). I designed it and assisted the developers in getting channels and playing both channels and movies. My main focus was on making sure the player could handle subtitles during video playback, playing video and managing the subscription same as Netflix.com.
+              I made a TV app for a company. I designed it and assisted the developers in getting channels and playing both channels and movies. My main focus was on making sure the player could handle subtitles during video playback, playing video and managing the subscription same as Netflix.com.
               </p>
 
               <div className="grid gap-1 grid-cols-3 mt-8">

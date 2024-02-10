@@ -1,11 +1,11 @@
 
 
 import React from 'react'
-import isLinkActive from '../lib/CommonMethods'
+import IsLinkActive from '../lib/CommonMethods'
 
 import { usePathname  } from 'next/navigation';
 export default function RouterLinks() {
- 
+    
     
     return (
         <div>
@@ -13,7 +13,7 @@ export default function RouterLinks() {
                 <li>
                     <a
                         href="/about"
-                        className={`block py-2 px-3 text-gray-700 hover:bg-gray-100  border-b-2 hover:border-siteDefaultColor hover:text-siteDefaultColor ${isLinkActive('/about') ? ' border-[#09757a]  font-bold text-siteDefaultColor' : 'border-transparent '
+                        className={`block py-2 px-3 text-gray-700 hover:bg-gray-100  border-b-2 hover:border-siteDefaultColor hover:text-siteDefaultColor ${IsLinkActive('/about') ? ' border-[#09757a]  font-bold text-siteDefaultColor' : 'border-transparent '
                             }`}
                     >
                         About Me
@@ -22,7 +22,7 @@ export default function RouterLinks() {
                 <li>
                     <a
                         href="/learn"
-                        className={`block py-2 px-3 text-gray-700 hover:bg-gray-100  border-b-2 hover:border-siteDefaultColor hover:text-siteDefaultColor ${isLinkActive('/learn') ? ' border-[#09757a] font-bold text-siteDefaultColor' : 'border-transparent '
+                        className={`block py-2 px-3 text-gray-700 hover:bg-gray-100  border-b-2 hover:border-siteDefaultColor hover:text-siteDefaultColor ${IsLinkActive('/learn') ? ' border-[#09757a] font-bold text-siteDefaultColor' : 'border-transparent '
                             }`}
                     >
                         Learn
@@ -31,7 +31,7 @@ export default function RouterLinks() {
                 <li>
                     <a
                         href="/projects"
-                        className={`block py-2 px-3 text-gray-700  hover:bg-gray-100  border-b-2 hover:border-siteDefaultColor hover:text-siteDefaultColor ${isLinkActive('/projects') ? ' border-[#09757a] font-bold text-siteDefaultColor' : 'border-transparent'
+                        className={`block py-2 px-3 text-gray-700  hover:bg-gray-100  border-b-2 hover:border-siteDefaultColor hover:text-siteDefaultColor ${IsLinkActive('/projects') ? ' border-[#09757a] font-bold text-siteDefaultColor' : 'border-transparent'
                             }`}
                     >
                         Projects
@@ -40,7 +40,7 @@ export default function RouterLinks() {
                 <li>
                     <a
                         href="/blog"
-                        className={`block py-2 px-3 text-gray-700  hover:bg-gray-100  border-b-2 hover:border-siteDefaultColor hover:text-siteDefaultColor ${isLinkActive('/blog') ? ' border-[#09757a] font-bold text-siteDefaultColor' : 'border-transparent'
+                        className={`block py-2 px-3 text-gray-700  hover:bg-gray-100  border-b-2 hover:border-siteDefaultColor hover:text-siteDefaultColor ${IsLinkActive('/blog') ? ' border-[#09757a] font-bold text-siteDefaultColor' : 'border-transparent'
                             }`}
                     >
                         My Writings

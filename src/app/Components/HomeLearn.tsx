@@ -13,7 +13,7 @@ export default function HomeLearn() {
             </h2>
             <p className="text-[18px] max-w-[400px]">
              
-              "Learn with me" is my initiative to teach people what I know and
+            &quot;Learn with me&quot; is my initiative to teach people what I know and
               share my knowledge.
             </p>
             <div className="mt-3">

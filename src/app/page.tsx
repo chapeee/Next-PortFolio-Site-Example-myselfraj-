@@ -22,7 +22,7 @@ export default function Home() {
           <div className="mt-7 md:mt-14">
             <p className="lg:text-[25px] xlg:text-[25px] lg:max-w-[780px] xlg:max-w-[850px] m-auto ">
               I engage in the art of creation, a visionary who believes in the
-              power of building visionay products. See you on Mars 🚀..
+              power of building visionay products. See you on Mars 🚀...
             </p>
           </div>
           <div className="bg-gray-50 p-5 mt-7 md:mt-14 lg:max-w-[700px] xlg:max-w-[800px] m-auto">
