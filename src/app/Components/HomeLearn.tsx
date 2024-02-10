@@ -16,9 +16,12 @@ export default function HomeLearn() {
               "Learn with me" is my initiative to teach people what I know and
               share my knowledge.
             </p>
-            <a href="/learn" className="text-[18px] pt-10">
+            <div className="mt-3">
+            <a href="/learn" className="text-[18px]">
               <u>Learn  More</u>
             </a>
+            </div>
+            
           </div>
           <div className="grid  md:grid-cols-1 lg:grid-cols-2 gap-10">
             <Image
@@ -26,6 +29,7 @@ export default function HomeLearn() {
               width={0}
               sizes="100vw"
               height={300}
+              alt="learn"
               style={{
                 width: "100%",
                 height: "250px",

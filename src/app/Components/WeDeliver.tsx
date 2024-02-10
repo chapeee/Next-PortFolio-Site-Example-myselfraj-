@@ -1,16 +1,17 @@
+"use client"
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 
 export default function WeDeliver() {
-  const [opacityagile, setOpacityagile] = useState(1);
-  const [opacitycodeQulity, setOpacitycodeQulity] = useState(0.3);
-  const [opacityAlleviate, setOpacityAlleviate] = useState(0.3);
+  const [opacityvle, setOpacityvle] = useState(1);
+  const [opacitywater, setOpacitywater] = useState(0.3);
+  const [opacitytvapp, setOpacitytvapp] = useState(0.3);
 
   useEffect(() => {
     const leftImage = document.getElementById("leftImage") as HTMLImageElement;
-    const agileHeading = document.getElementById("agile");
-    const codeQulityHeading = document.getElementById("codeQulity");
-    const AlleviateHeading = document.getElementById("Alleviate");
+    const vleHeading = document.getElementById("vle");
+    const waterHeading = document.getElementById("water");
+    const tvappHeading = document.getElementById("tvapp");
 
     const isInView = (element: any) => {
       const rect = element.getBoundingClientRect();
@@ -25,34 +26,34 @@ export default function WeDeliver() {
     
     const handleScroll = () => {
       if (window.innerWidth <= 767) {
-        setOpacityagile(1);
-        setOpacitycodeQulity(1);
-        setOpacityAlleviate(1);
+        setOpacityvle(1);
+        setOpacitywater(1);
+        setOpacitytvapp(1);
         return true;
       }
-      if (isInView(agileHeading)) {
+      if (isInView(vleHeading)) {
         if (leftImage) {
           leftImage.src =
             "https://ik.imagekit.io/mq90sdk8y/myselfraj/acri.png?updatedAt=17069618344912";
-          setOpacityagile(1);
-          setOpacitycodeQulity(0.3);
-          setOpacityAlleviate(0.3);
+          setOpacityvle(1);
+          setOpacitywater(0.3);
+          setOpacitytvapp(0.3);
         }
-      } else if (isInView(codeQulityHeading)) {
+      } else if (isInView(waterHeading)) {
         if (leftImage) {
           leftImage.src =
             "https://ik.imagekit.io/mq90sdk8y/myselfraj/water-har.png?updatedAt=1707019559105";
-          setOpacityagile(0.3);
-          setOpacitycodeQulity(1);
-          setOpacityAlleviate(0.3);
+          setOpacityvle(0.3);
+          setOpacitywater(1);
+          setOpacitytvapp(0.3);
         }
-      } else if (isInView(AlleviateHeading)) {
+      } else if (isInView(tvappHeading)) {
         if (leftImage) {
           leftImage.src =
             "https://ik.imagekit.io/mq90sdk8y/myselfraj/tr:q:70,w-600/tvapp.png?updatedAt=1707019951457";
-          setOpacityagile(0.3);
-          setOpacitycodeQulity(0.3);
-          setOpacityAlleviate(1);
+          setOpacityvle(0.3);
+          setOpacitywater(0.3);
+          setOpacitytvapp(1);
         }
       }
     };
@@ -116,8 +117,8 @@ export default function WeDeliver() {
             />
             <div
               className="pt-7 pb-14 md:pb-[250px] md:pt-[290px]"
-              id="agile"
-              style={{ opacity: opacityagile }}
+              id="vle"
+              style={{ opacity: opacityvle }}
             >
               <h3 className="mb-[14px] text-3xl md:text-[34px] font-[600] leading-[110%]">
                 VLE Platform
@@ -165,8 +166,8 @@ export default function WeDeliver() {
             />
             <div
               className="pt-7 pb-14 md:pb-[250px] duration-300"
-              id="codeQulity"
-              style={{ opacity: opacitycodeQulity }}
+              id="water"
+              style={{ opacity: opacitywater }}
             >
               <h3 className="mb-[14px] text-3xl md:text-[34px]  font-[600] leading-[110%]">
                 Water harvesting
@@ -213,8 +214,8 @@ export default function WeDeliver() {
             />
             <div
               className="pt-7 pb-14 md:pb-[150px] duration-300"
-              id="Alleviate"
-              style={{ opacity: opacityAlleviate }}
+              id="tvapp"
+              style={{ opacity: opacitytvapp }}
             >
               <h3 className="mb-[14px] text-3xl md:text-[34px]  font-[600] leading-[110%]">
                Tv App

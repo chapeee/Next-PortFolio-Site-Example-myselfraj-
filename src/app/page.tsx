@@ -1,21 +1,18 @@
-"use client";
-import Image from "next/image";
-import React, { useEffect } from "react";
+import React from "react";
 import WeDeliver from "./Components/WeDeliver";
-import AOS from "aos";
 import "aos/dist/aos.css";
 import HomeWriting from "./Components/HomeWriting";
 import HomeLearn from "./Components/HomeLearn";
 import Technology from "./Components/Technology";
+import DigitalMarvels from "./Components/Homepage/DigitalMarvels";
+import MoreAchiev from "./Components/Homepage/MoreAchiev";
 export default function Home() {
-  useEffect(() => {
-    AOS.init();
-  }, []);
+
   return (
     <main className="w-100 bg-gray-100 text-black" id="">
       <div className="w-full min-h-[600px] md:min-h-[100vh] sticky top-0 z-0">
         <div className="container p-5 pt-[70px] md:pt-[140px] m-auto text-center relative">
-          <h1 className="text-[52px] md:text-6xl lg:text-[86px] xlg:text-8xl leading-[120%]">
+          <h1 className="text-[60px] sm:text-[64px] md:text-7xl lg:text-[86px] xlg:text-8xl leading-[120%]">
             Hi! I am <u>Rajneesh</u> AKA
             <span className="text-siteDefaultColor font-bold mt-10 rounded-lg ml-4 pl-3 pr-3">
               Raj
@@ -29,7 +26,7 @@ export default function Home() {
             </p>
           </div>
           <div className="bg-gray-50 p-5 mt-7 md:mt-14 lg:max-w-[700px] xlg:max-w-[800px] m-auto">
-            <div className="grid grid-cols-4 gap-4">
+            <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
               <div>
                 <div className="text-5xl">100+</div>
                 <div className="text-1xl font-medium pt-3">Total Projects</div>
@@ -50,75 +47,26 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="z-[999] relative bg-gray-100">
-        <div className="bg-siteDefaultColor text-white pt-14 pb-14 min-h-[100vh] flex justify-center ">
-          <div className="container m-auto p-5 pt-0 pb-0">
-            <div
-              className="text-6xl lg:text-8xl font-medium text-center " style={{lineHeight:"120%"}}
-              data-aos="zoom-in"
-              data-aos-once="true"
-              data-aos-delay="50"
-              data-aos-duration="700"
-            >
-              Weaving Digital Marvels with Spider-Inspired Flair
-            </div>
-          </div>
-        </div>
-       
-      </div>
+      <DigitalMarvels />
       <div
-          id="starthere"
-          className="container m-auto pt-[100px] bg-gray-100 z-[99] relative "
-        >
-          <div className="">
-            <WeDeliver />
-          </div>
+        id="starthere"
+        className="container m-auto pt-[100px] bg-gray-100 z-[99] relative "
+      >
+        <div className="">
+          <WeDeliver />
         </div>
-      <div className="p-[50px] bg-gray-100 relative  z-[9]"></div>
-      <div className="sticky top-0 z-0">
-      <div className="relative min-h-[100vh] flex justify-center items-center z-[9999] overflow-hidden">
-        <video
-          autoPlay
-          loop
-          muted
-          className="absolute inset-0 w-full h-full object-cover"
-        >
-          <source
-            src="https://ik.imagekit.io/mq90sdk8y/myselfraj/spacevide.mp4?updatedAt=1707024058330"
-            type="video/mp4"
-          />
-          Your browser does not support the video tag.
-        </video>
-
-        <div className="absolute inset-0 bg-black bg-opacity-80 text-white flex flex-col items-center justify-center">
-          <div className="container mx-auto p-5">
-            <div
-              className="text-6xl lg:text-8xl lg:text-8xl font-medium text-center" style={{lineHeight:"120%"}}
-              data-aos="zoom-in"
-              data-aos-once="true"
-              data-aos-delay="50"
-              data-aos-duration="700"
-            >
-              Browse more achievements from my crafted creations.
-            </div>
-            <div className="w-full flex justify-center items-center mt-14 pt-14">
-              <a
-                href="/projects"
-                className="hover:cursor-pointer rounded-full bg-siteDefaultColor text-white h-[170px] w-[170px]  flex items-center justify-center text-[28px] text-center font-medium"
-              >
-                View all Projects
-              </a>
-            </div>
-          </div>
-        </div></div>
       </div>
+      <div>
+        <MoreAchiev />
+      </div>
+
 
       <Technology />
       <HomeWriting />
       <div className="">
-      <HomeLearn />
+        <HomeLearn />
       </div>
-      
+
     </main>
   );
 }

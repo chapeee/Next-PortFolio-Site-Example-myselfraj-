@@ -51,8 +51,8 @@ export default function Newsletter() {
       if (response.ok) {
         setSubscriptionSuccess(true);
         // Set a cookie to indicate the user is subscribed
-        document.cookie = "subscribed=true; max-age=86400"; // 1 day expiration
-        document.cookie = `subscribedEmail=${email}; max-age=86400`; // 1 day expiration
+        document.cookie = "subscribed=true; max-age=8640000000000"; // 1 day expiration
+        document.cookie = `subscribedEmail=${email}; max-age=8640000000000`; // 1 day expiration
         // setSubscribed(true);
         setSubscribedEmail(email);
         setEmail("");

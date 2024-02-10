@@ -59,3 +59,27 @@ html, body {
 html,body{
   background: #f3f4f7 !important;
 }
+.code-snipit pre{
+  background: rgb(212 228 229) !important;
+  border-radius: 10px !important;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.blog-page-myselfraj ol{
+  list-style-type: decimal;
+}
+
+.blog-page-myselfraj ul{
+  list-style-type: disc;
+}
+.blog-page-myselfraj figure{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.blog-page-myselfraj p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.blog-page-myselfraj h3{
+  font-size: 25px;
+  font-weight: 700;
+}

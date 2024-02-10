@@ -12,12 +12,8 @@ export default defineType({
     }),
     defineField({
       name: 'excerpt',
-      title: 'excerpt',
-      type: 'text',
-      options: {
-        source: 'title',
-        maxLength: 96,
-      },
+      title: 'Excerpt',
+      type: 'string',
     }),
     defineField({
       name: 'slug',
@@ -59,13 +55,11 @@ export default defineType({
       name: 'publishedAt',
       title: 'Published at',
       type: 'datetime',
-    },
-    ),
+    }),
     defineField({
       name: 'body',
       title: 'Body',
       type: 'blockContent',
-      
     }),
   ],
 

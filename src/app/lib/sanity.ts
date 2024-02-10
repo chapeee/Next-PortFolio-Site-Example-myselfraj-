@@ -6,3 +6,11 @@ export async function getPosts() {
 export async function getPostBySlug(slug: string) {
   return await sanityclient.fetch<any[]>(`*[_type == 'post' && slug.current == $slug]{title, body, excerpt, 'image': mainImage}[0]`, { slug });
 }
+
+export async function getLatestPosts() {
+  return await sanityclient.fetch<any[]>(`
+    *[_type == 'post']
+    | order(_createdAt desc)
+    | [0..2] { title, excerpt, slug, 'image': mainImage }
+  `);
+}

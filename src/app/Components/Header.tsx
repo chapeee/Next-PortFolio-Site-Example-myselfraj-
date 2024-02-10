@@ -3,6 +3,7 @@ import React from 'react'
 import Image from "next/image";
 
 import { usePathname  } from 'next/navigation';
+import RouterLinks from './RouterLinks';
 
 export default function Header() {
     const isLinkActive = (href : any) => {
@@ -34,70 +35,17 @@ export default function Header() {
                 loading="lazy"
               />
             </a>
-            <button
-              data-collapse-toggle="navbar-default"
-              type="button"
-              className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 "
-              aria-controls="navbar-default"
-              aria-expanded="false"
-            >
-              <span className="sr-only">Open main menu</span>
-            </button>
+            <div className="dropdown dropdown-end sm:block block md:hidden dropdown-hover">
+  <div tabIndex={0} role="button" className="btn bg-white"><svg style={{width:"15px"}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></div>
+  <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+<RouterLinks />
+  </ul>
+</div>
             <div
               className="hidden w-full md:block md:w-auto"
               id="navbar-default"
             >
-              <ul className="font-medium text-[18px] flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-100 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 bg-transparent  ">
-                <li>
-                <a
-                  href="/about"
-                  className={`block py-2 px-3 text-gray-700 hover:bg-gray-100  border-b-2 hover:border-siteDefaultColor hover:text-siteDefaultColor ${
-                    isLinkActive('/about') ? ' border-[#09757a]  font-bold text-siteDefaultColor' : 'border-transparent '
-                  }`}
-                >
-                    About Me
-                  </a>
-                </li>
-                <li>
-                <a
-                  href="/learn"
-                  className={`block py-2 px-3 text-gray-700 hover:bg-gray-100  border-b-2 hover:border-siteDefaultColor hover:text-siteDefaultColor ${
-                    isLinkActive('/learn') ? ' border-[#09757a] font-bold text-siteDefaultColor' : 'border-transparent '
-                  }`}
-                >
-                    Learn
-                  </a>
-                </li>
-                <li>
-                <a
-                  href="/projects"
-                  className={`block py-2 px-3 text-gray-700  hover:bg-gray-100  border-b-2 hover:border-siteDefaultColor hover:text-siteDefaultColor ${
-                    isLinkActive('/projects') ? ' border-[#09757a] font-bold text-siteDefaultColor' : 'border-transparent'
-                  }`}
-                >
-                    Projects
-                  </a>
-                </li>
-                <li>
-                <a
-                  href="/blog"
-                  className={`block py-2 px-3 text-gray-700  hover:bg-gray-100  border-b-2 hover:border-siteDefaultColor hover:text-siteDefaultColor ${
-                    isLinkActive('/blog') ? ' border-[#09757a] font-bold text-siteDefaultColor' : 'border-transparent'
-                  }`}
-                >
-                    My Writings
-                  </a>
-                </li>
-                
-                <li>
-                  <a target='blank'
-                    href="https://calendly.com/myselfraj/30min"
-                    className="block py-2 px-3  text-white bg-siteDefaultColor rounded-full pl-4 pr-4 border border-b-1 hover:border hover:border-b-1 hover:border-siteDefaultColor hover:bg-white hover:text-siteDefaultColor"
-                  >
-                   Lets Chat
-                  </a>
-                </li>
-              </ul>
+              <RouterLinks />
             </div>
           </div>
         </nav>
