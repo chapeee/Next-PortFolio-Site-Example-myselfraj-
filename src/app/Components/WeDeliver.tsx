@@ -78,7 +78,7 @@ export default function WeDeliver() {
             </h2>
             <div className="mb-8 mt-5 underline"> <a className="text-[18px]" href="/project">View All</a> </div>
            
-            <div className="mockup-window border border-gray-600">
+            <div className="mockup-window border border-gray-600 hidden md:block">
             <Image
               id="leftImage"
               src="https://ik.imagekit.io/mq90sdk8y/myselfraj/acri.png?updatedAt=17069618344912"
@@ -86,7 +86,7 @@ export default function WeDeliver() {
               width={0}
               sizes="100vw"
               height={300}
-              className="hidden md:block"
+              
               style={{
                 width: "100%",
                 height: "100%",
@@ -101,16 +101,16 @@ export default function WeDeliver() {
           <div className="md:max-w-[500px] md:mt-0 mt-14 ">
             <Image
               id="leftImage"
-              src="https://ik.imagekit.io/mq90sdk8y/myselfraj/acri.png?updatedAt=1706960896731"
-              alt="Deliver quality applications with Grapdevs Technologies"
+              src="https://ik.imagekit.io/mq90sdk8y/myselfraj/acri.png?updatedAt=17069618344912"
+              alt="Vle Platform"
               width={0}
               sizes="100vw"
               height={300}
               className="md:hidden block"
               style={{
                 width: "100%",
-                height: "300px",
-                objectFit: "cover",
+                height: "auto",
+                objectFit: "contain",
                 borderRadius: "8px",
               }}
               loading="lazy"
@@ -150,16 +150,16 @@ export default function WeDeliver() {
             </div>
             <Image
               id="leftImage"
-              src="https://ik.imagekit.io/mq90sdk8y/image/tr:q:90,w-550/code-quality-grapdevs.avif?updatedAt=1706537093166"
-              alt="Deliver quality applications with Grapdevs Technologies"
+              src="https://ik.imagekit.io/mq90sdk8y/myselfraj/water-har.png?updatedAt=1707019559105"
+              alt="Water harvesting"
               width={0}
               sizes="100vw"
               height={300}
               className="md:hidden block"
               style={{
                 width: "100%",
-                height: "300px",
-                objectFit: "cover",
+                height: "auto",
+                objectFit: "contain",
                 borderRadius: "8px",
               }}
               loading="lazy"
@@ -198,16 +198,16 @@ export default function WeDeliver() {
             </div>
             <Image
               id="leftImage"
-              src="https://ik.imagekit.io/mq90sdk8y/image/tr:q:90,w-550/stress-free-dev-grapdevs.avif?updatedAt=1706537243567"
-              alt="Deliver quality applications with Grapdevs Technologies"
+              src="https://ik.imagekit.io/mq90sdk8y/myselfraj/tr:q:70,w-600/tvapp.png?updatedAt=1707019951457"
+              alt="TV App"
               width={0}
               sizes="100vw"
               height={300}
               className="md:hidden block"
               style={{
                 width: "100%",
-                height: "350px",
-                objectFit: "cover",
+                height: "auto",
+                objectFit: "contain",
                 borderRadius: "8px",
               }}
               loading="lazy"

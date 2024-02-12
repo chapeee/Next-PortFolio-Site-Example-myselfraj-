@@ -24,7 +24,7 @@ export default function MoreAchiev() {
                     <div className="absolute inset-0 bg-black bg-opacity-80 text-white flex flex-col items-center justify-center">
                         <div className="container mx-auto p-5">
                             <div
-                                className="text-6xl lg:text-8xl lg:text-8xl font-medium text-center" style={{ lineHeight: "120%" }}
+                                className="text-[48px] sm:-[58px] lg:text-8xl lg:text-8xl font-medium text-center" style={{ lineHeight: "120%" }}
                                 data-aos="zoom-in"
                                 data-aos-once="true"
                                 data-aos-delay="50"

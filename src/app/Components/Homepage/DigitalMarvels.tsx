@@ -12,7 +12,7 @@ export default function DigitalMarvels() {
             <div className="bg-siteDefaultColor text-white pt-14 pb-14 min-h-[100vh] flex justify-center ">
                 <div className="container m-auto p-5 pt-0 pb-0">
                     <div
-                        className="text-6xl lg:text-8xl font-medium text-center " style={{ lineHeight: "120%" }}
+                        className="text-[48px] sm:-[58px] lg:text-8xl font-medium text-center " style={{ lineHeight: "120%" }}
                         data-aos="zoom-in"
                         data-aos-once="true"
                         data-aos-delay="50"
