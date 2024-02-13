@@ -17,7 +17,7 @@ export default function HomeLearn() {
             </p>
             <div className="mt-3">
               <a href="/learn" className="text-[18px]">
-                <u>Learn More</u>
+                <u>Learn Tech</u>
               </a>
             </div>
           </div>

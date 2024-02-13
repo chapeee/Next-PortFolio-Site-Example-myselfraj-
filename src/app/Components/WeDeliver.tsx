@@ -76,7 +76,7 @@ export default function WeDeliver() {
             <div className="mt-4 text-3xlf">My Unique Project Achievements</div>
           
             </h2>
-            <div className="mb-8 mt-5 underline"> <a className="text-[18px]" href="/project">View All</a> </div>
+            <div className="mb-8 mt-5 underline"> <a className="text-[18px]" href="/projects">View All</a> </div>
            
             <div className="mockup-window border border-gray-600 hidden md:block">
             <Image

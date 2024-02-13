@@ -12,8 +12,8 @@ export default async function HomeWriting() {
             <h2 className="text-4xl md:text-4xl lg:text-5xl font-medium mb-6 leading-[110%] md:leading-[140%]">
               Writings:
             </h2>
-            <a href="/writings" className="text-[18px] pt-10">
-              <u>Read More</u>
+            <a href="/blog" className="text-[18px] pt-10">
+              <u>Read More Blogs</u>
             </a>
           </div>
           <div className="col-span-3">
