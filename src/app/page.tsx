@@ -6,6 +6,7 @@ import HomeLearn from "./Components/HomeLearn";
 import Technology from "./Components/Technology";
 import DigitalMarvels from "./Components/Homepage/DigitalMarvels";
 import MoreAchiev from "./Components/Homepage/MoreAchiev";
+import CompaniesIhaveWorked from "./Components/CompaniesIhaveWorked";
 export default function Home() {
 
   return (
@@ -66,7 +67,9 @@ export default function Home() {
       <div className="">
         <HomeLearn />
       </div>
-
+      <div className="relative z-[99] pt-[80px] md:pt-[150px] bg-white border-b-2 pb-[80px] md:pb-[150px]">
+       <CompaniesIhaveWorked />
+      </div>
     </main>
   );
 }
