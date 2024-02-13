@@ -27,7 +27,7 @@ export default function RootLayout({
         <Newsletter />
         <div className="bg-white w-full text-center pb-14">
           <a
-            href="https://www.linkedin.com/in/iamrajneesh/"
+            href="https://www.linkedin.com/in/myselfraj/"
             className="text-2xl font-medium underline text-black"
           >
             Follow on Linkedin
