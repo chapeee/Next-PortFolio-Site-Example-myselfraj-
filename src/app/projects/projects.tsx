@@ -746,9 +746,7 @@ export default function Projects() {
             <div className="border boder-1 border-gray-300 rounded-full pl-5 pr-5  p-2 ">
               PRM Digital
             </div>
-            <div className="border boder-1 border-gray-300 rounded-full pl-5 pr-5 p-2 ">
-              2paws
-            </div>
+            
             <div className="border boder-1 border-gray-300 rounded-full pl-5 pr-5 p-2 ">
               LegacyFlow
             </div>
