@@ -8,7 +8,7 @@ export default function CompaniesIhaveWorked() {
           <h2 className="text-4xl  mb-14 md:text-6xl">
             Companies I have worked with
           </h2>
-          <div className="flex flex-wrap md:gap-6 gap-4 text-[18px] max-w-[950px] m-auto text-gray-600 font-medium">
+          <div className="flex p-5 flex-wrap md:gap-6 gap-4 text-[18px] max-w-[950px] m-auto text-gray-600 font-medium">
             {" "}
             <div className="border boder-1 border-gray-300 rounded-full pl-5 pr-5  p-2">
               Choreless
@@ -34,9 +34,7 @@ export default function CompaniesIhaveWorked() {
             <div className="border boder-1 border-gray-300 rounded-full pl-5 pr-5  p-2 ">
               PRM Digital
             </div>
-            <div className="border boder-1 border-gray-300 rounded-full pl-5 pr-5 p-2 ">
-              2paws
-            </div>
+         
             <div className="border boder-1 border-gray-300 rounded-full pl-5 pr-5 p-2 ">
               LegacyFlow
             </div>
