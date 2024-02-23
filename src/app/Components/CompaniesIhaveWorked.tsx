@@ -10,9 +10,8 @@ export default function CompaniesIhaveWorked() {
           </h2>
           <div className="flex p-5 flex-wrap md:gap-6 gap-4 text-[18px] max-w-[950px] m-auto text-gray-600 font-medium">
             {" "}
-            <div className="border boder-1 border-gray-300 rounded-full pl-5 pr-5  p-2">
-              Choreless
-            </div>
+           
+
             <div className="border boder-1 border-gray-300 rounded-full pl-5 pr-5 p-2  ">
               Jeff.co
             </div>
@@ -25,6 +24,12 @@ export default function CompaniesIhaveWorked() {
             <div className="border boder-1 border-gray-300 rounded-full pl-5 pr-5 p-2 ">
               Fusioni Tech
             </div>
+            <div className="border boder-1 border-gray-300 rounded-full pl-5 pr-5  p-2">
+              Rosewood Publications
+            </div>
+            <div className="border boder-1 border-gray-300 rounded-full pl-5 pr-5  p-2">
+              Choreless
+            </div>
             <div className="border boder-1 border-gray-300 rounded-full pl-5 pr-5 p-2 ">
               Mithi
             </div>
@@ -34,7 +39,9 @@ export default function CompaniesIhaveWorked() {
             <div className="border boder-1 border-gray-300 rounded-full pl-5 pr-5  p-2 ">
               PRM Digital
             </div>
-         
+            <div className="border boder-1 border-gray-300 rounded-full pl-5 pr-5  p-2">
+              TrueDreamster Publications
+            </div>
             <div className="border boder-1 border-gray-300 rounded-full pl-5 pr-5 p-2 ">
               LegacyFlow
             </div>
@@ -46,6 +53,9 @@ export default function CompaniesIhaveWorked() {
             </div>
             <div className="border boder-1 border-gray-300 rounded-full pl-5 pr-5 p-2 ">
               Fm1
+            </div>
+            <div className="border boder-1 border-gray-300 rounded-full pl-5 pr-5  p-2">
+              Dreamershelf Publications
             </div>
             <div className="border boder-1 border-gray-300 rounded-full pl-5 pr-5  p-2">
               The Fold
