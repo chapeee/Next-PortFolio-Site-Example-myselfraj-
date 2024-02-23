@@ -28,9 +28,15 @@ export default function RootLayout({
         <div className="bg-white w-full text-center pb-14">
           <a
             href="https://www.linkedin.com/in/myselfraj/"
-            className="text-2xl font-medium underline text-black"
+            className="text-2xl m-2 font-medium underline text-gray-800"
           >
             Follow on Linkedin
+          </a>
+          <a
+            href="https://github.com/chapeee"
+            className="text-2xl m-2 font-medium underline text-gray-800"
+          >
+            Check My GitHub
           </a>
         </div>
       </body>
