@@ -6,7 +6,7 @@ export default function Social() {
       <div className="badge text-white bg-siteDefaultColor mt-14 mb-5">
         Profiles
       </div>
-      <h2 className="sm:text-4xl md:text-5xl text-center mb-10 font-bold">
+      <h2 className="text-3xl md:text-5xl text-center mb-10 font-bold">
         Check My Social Worlds
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-7">

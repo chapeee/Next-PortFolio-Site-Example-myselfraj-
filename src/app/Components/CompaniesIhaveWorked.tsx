@@ -12,22 +12,28 @@ export default function CompaniesIhaveWorked() {
             {" "}
            
 
-            <div className="border boder-1 border-gray-300 rounded-full pl-5 pr-5 p-2  ">
+            <div className="border boder-1 border-gray-300 bg-gray-100 rounded-full pl-5 pr-5 p-2  ">
               Jeff.co
             </div>
-            <div className="border boder-1 border-gray-300 rounded-full pl-5 pr-5 p-2 ">
+            <div className="border boder-1 border-gray-300 bg-gray-100 rounded-full pl-5 pr-5 p-2 ">
               Karat.io
             </div>
-            <div className="border boder-1 border-gray-300 rounded-full pl-5 pr-5 p-2 ">
+            <div className="border boder-1 border-gray-300 bg-gray-100 rounded-full pl-5 pr-5 p-2 ">
               Mithi.com
             </div>
-            <div className="border boder-1 border-gray-300 rounded-full pl-5 pr-5 p-2 ">
+            <div className="border boder-1 border-gray-300 bg-gray-100 rounded-full pl-5 pr-5 p-2 ">
+              Petofy
+            </div>
+            <div className="border boder-1 border-gray-300 bg-gray-100 rounded-full pl-5 pr-5 p-2 ">
+              Cynotech
+            </div>
+            <div className="border boder-1 border-gray-300 bg-gray-100 rounded-full pl-5 pr-5 p-2 ">
               Fusioni Tech
             </div>
-            <div className="border boder-1 border-gray-300 rounded-full pl-5 pr-5  p-2">
+            <div className="border boder-1 border-gray-300 bg-gray-100 rounded-full pl-5 pr-5  p-2">
               Rosewood Publications
             </div>
-            <div className="border boder-1 border-gray-300 rounded-full pl-5 pr-5  p-2">
+            <div className="border boder-1 border-gray-300 bg-gray-100 rounded-full pl-5 pr-5  p-2">
               Choreless
             </div>
             <div className="border boder-1 border-gray-300 rounded-full pl-5 pr-5 p-2 ">
@@ -36,10 +42,10 @@ export default function CompaniesIhaveWorked() {
             <div className="border boder-1 border-gray-300 rounded-full pl-5 pr-5 p-2 ">
               Marketing Crawlers
             </div>
-            <div className="border boder-1 border-gray-300 rounded-full pl-5 pr-5  p-2 ">
+            <div className="border boder-1 border-gray-300 bg-gray-100 rounded-full pl-5 pr-5  p-2 ">
               PRM Digital
             </div>
-            <div className="border boder-1 border-gray-300 rounded-full pl-5 pr-5  p-2">
+            <div className="border boder-1 border-gray-300 bg-gray-100 rounded-full pl-5 pr-5  p-2">
               TrueDreamster Publications
             </div>
             <div className="border boder-1 border-gray-300 rounded-full pl-5 pr-5 p-2 ">
@@ -63,7 +69,7 @@ export default function CompaniesIhaveWorked() {
             <div className="border boder-1 border-gray-300 rounded-full pl-5 pr-5  p-2">
               Wapka
             </div>
-            <div className="border boder-1 border-gray-300 rounded-full pl-5 pr-5 p-2 ">
+            <div className="border boder-1 border-gray-300 bg-gray-100 rounded-full pl-5 pr-5 p-2 ">
               Educrafter Education
             </div>
             <div className="border boder-1 border-gray-300 rounded-full pl-5 pr-5 p-2 ">
@@ -78,12 +84,7 @@ export default function CompaniesIhaveWorked() {
             <div className="border boder-1 border-gray-300 rounded-full pl-5 pr-5 p-2 ">
               JFlex
             </div>
-            <div className="border boder-1 border-gray-300 rounded-full pl-5 pr-5 p-2 ">
-              Petofy
-            </div>
-            <div className="border boder-1 border-gray-300 rounded-full pl-5 pr-5 p-2 ">
-              Cynotech
-            </div>
+           
           </div>
         </div>
     </div>
