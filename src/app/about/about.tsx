@@ -9,10 +9,10 @@ export default function About() {
         <h2 className="text-4xl md:text-4xl lg:text-5xl font-medium  leading-[110%] md:leading-[140%]">
           About Me
         </h2>
-        <div className="mt-14">
+        <div className="mt-14 sm:float-right sm:pl-11">
           <Image
             id="leftImage"
-            src="https://ik.imagekit.io/mq90sdk8y/myselfraj/tr:q:80,w-700/coding.avif?updatedAt=1707034111341"
+            src="https://avatars.githubusercontent.com/u/137584877?v=4"
             alt="Writings"
             width={0}
             sizes="100vw"
@@ -20,13 +20,13 @@ export default function About() {
             style={{
               width: "100%",
               height: "350px",
-              objectFit: "cover",
+              objectFit: "contain",
               borderRadius: "10px",
             }}
             loading="lazy"
           />
         </div>
-        <div className="mt-10">
+        <div className="mt-11">
           <p className="text-[20px]">
             My &quot;About Me&quot; has <b>three cool chapters!</b> First,
             I&apos;ll spill the beans on how I got my hands on my very first
@@ -36,6 +36,7 @@ export default function About() {
             the path to becoming a developer.
           </p>
         </div>
+        <div className="hidden md:block"> <br></br><br></br><br></br><br></br></div>
         <div className="mt-10">
           <h2 className="text-[24px] font-bold text-left mb-3">
             My First Computer
