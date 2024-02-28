@@ -1,7 +1,6 @@
 import { Block } from '@sanity/block-content-to-react';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 
-
 type Block = {
   _type: string;
   // Add any other properties you expect in a block

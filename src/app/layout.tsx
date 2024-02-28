@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Playfair_Display } from "next/font/google";
 import "./globals.css";
 import Newsletter from "./Components/Newsletter";
+import NextTopLoader from "nextjs-toploader";
 
 import Header from "./Components/Header";
 const inter = Playfair_Display({ subsets: ["latin"] });
@@ -9,7 +10,6 @@ const inter = Playfair_Display({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "👋 Hi! I am Raj, Your Next Dev",
   description: "I create simple but strong code to fulfill your requirements.",
-
 };
 
 export default function RootLayout({
@@ -19,10 +19,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="bg-gray-100">
-       
       <body className={inter.className}>
-       <Header />
-
+        <Header />
+        <NextTopLoader
+          color="#09757a"
+          initialPosition={0.08}
+          crawlSpeed={200}
+          height={3}
+        />
         {children}
         <Newsletter />
         <div className="bg-white w-full text-center pb-14">
