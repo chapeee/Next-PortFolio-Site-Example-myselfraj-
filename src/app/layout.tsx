@@ -9,7 +9,6 @@ const inter = Playfair_Display({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "👋 Hi! I am Raj, Your Next Dev",
   description: "I create simple but strong code to fulfill your requirements.",
-
 };
 
 export default function RootLayout({
@@ -19,9 +18,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="bg-gray-100">
-       
       <body className={inter.className}>
-       <Header />
+        <Header />
 
         {children}
         <Newsletter />

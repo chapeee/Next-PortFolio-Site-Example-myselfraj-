@@ -5,7 +5,10 @@ export default function Technology() {
     <div className="w-full bg-siteDefaultColor text-white  min-h-[100vh] relative z-[999]">
       <div className="container p-5 m-auto pt-[100px] pb-[100px]">
         <div className="">
-          <h2 style={{lineHeight:"110%"}} className="text-4xl md:text-4xl lg:text-6xl font-medium md:mb-10 leading-[150%]  max-w-[800px]">
+          <h2
+            style={{ lineHeight: "110%" }}
+            className="text-4xl md:text-4xl lg:text-6xl font-medium md:mb-10 leading-[150%]  max-w-[800px]"
+          >
             Technology: The technology I work on is cutting-edge and innovative
           </h2>
         </div>
