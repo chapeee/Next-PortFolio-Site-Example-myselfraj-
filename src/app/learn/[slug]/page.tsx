@@ -32,11 +32,11 @@ export default async function Page({ params }: { params: { slug: string } }) {
       <div className="container m-auto  text-black pt-[50px] md:pt-[100px] ">
         <div className=" p-5 m-auto ">
           <div className="flex">
-            <div>
+            <div className="fixed">
               {" "}
               <LearnSidebar />
             </div>
-            <div>
+            <div className="md:ml-0 lg:ml-[360px]">
               <div>
                 <div className="w-full p-10 pt-0 blog-page-myselfraj text-black ">
                   <h2 className="text-siteDefaultColor font-medium m-auto pt-3 text-4xl md:text-3xl lg:text-6xl leading-[120%] md:leading-[140%] text-left">

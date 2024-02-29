@@ -28,6 +28,7 @@ export default function RootLayout({
           height={3}
         />
         {children}
+
         <Newsletter />
         <div className="bg-white w-full text-center pb-14">
           <a

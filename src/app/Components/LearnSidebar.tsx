@@ -26,8 +26,8 @@ export default async function LearnSidebar() {
               <div className="mt-5 mb-5  rounded-xl p-4 w-80 min-h-[500px] overflow-x-hidden overflow-y-auto scroll-behavior-smooth bg-gray-100 text-base-content">
                 <span key={index}>
                   <Link
-                    className="text-black cursor-pointer  w-full hover:underline text-[17px]"
-                    data-id={learn.slug.current}
+                    className="text-black cursor-pointer  tooltip tooltip-bottom w-full hover:underline text-[17px]"
+                    data-id={learn.slug.current}  data-tip= {learn.title}
                     href={"/learn/" + learn.slug.current}
                   >
                     <div className="w-full m-0 p-1 whitespace-nowrap overflow-hidden overflow-ellipsis">

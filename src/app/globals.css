@@ -83,3 +83,11 @@ html,body{
   font-size: 25px;
   font-weight: 700;
 }
+.blog-page-myselfraj h4{
+  font-size: 22px;
+  font-weight: 600;
+}
+.blog-page-myselfraj a{
+  text-decoration: underline;
+  color: red;
+}
