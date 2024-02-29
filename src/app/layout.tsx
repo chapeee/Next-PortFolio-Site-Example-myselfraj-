@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Playfair_Display } from "next/font/google";
 import "./globals.css";
 import Newsletter from "./Components/Newsletter";
-
+import NextTopLoader from 'nextjs-toploader';
 import Header from "./Components/Header";
 const inter = Playfair_Display({ subsets: ["latin"] });
 
@@ -19,6 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="bg-gray-100">
       <body className={inter.className}>
+      <NextTopLoader color="#09757a"  crawl={true} />
         <Header />
 
         {children}
