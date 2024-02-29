@@ -10,14 +10,14 @@ export default function Projects() {
             Projects
           </h2>
           <p className="text-[18px] mt-7">
-            So far, I&quot;ve been a part of more than 100 projects. However, for my
-            freelance work, I&quot;ll be focusing on 67 projects. These include
-            various projects I&quot;ve done for companies or clients. I&quot;ve listed my
-            top projects, covering everything about them – from the technologies
-            used to the roles I played. This includes personal projects like
-            open source work, ones I&quot;ve sold, ongoing projects, and client
-            projects. Additionally, I&quot;ve highlighted some of my most favorite
-            projects in this collection.
+            So far, I&quot;ve been a part of more than 100 projects. However,
+            for my freelance work, I&quot;ll be focusing on 67 projects. These
+            include various projects I&quot;ve done for companies or clients.
+            I&quot;ve listed my top projects, covering everything about them –
+            from the technologies used to the roles I played. This includes
+            personal projects like open source work, ones I&quot;ve sold,
+            ongoing projects, and client projects. Additionally, I&quot;ve
+            highlighted some of my most favorite projects in this collection.
           </p>
         </div>{" "}
       </div>
@@ -274,7 +274,6 @@ export default function Projects() {
                 </div>
 
                 <div className="flex flex-wrap lg:flex-nowrap lg:flex-col flex-row lg:gap-o gap-4 lg:gap-0 items-start lg:items-end lg:mt-0 mt-10">
-                  
                   <div className="text-[18px] lg:mt-5 bg-transparent text-gray-700 border-gray-500 border  p-2 pl-5 pr-5 rounded-full">
                     CI/PHP/Python
                   </div>
@@ -534,9 +533,10 @@ export default function Projects() {
                     Make My Post:
                   </div>
                   <p className="mt-5 text-[18px] text-gray-200">
-                  &quot;Make My Post&quot; one of the best apps for creating Indian
-                    festival posters. I worked on improving the app&quot;s appearance
-                    (UI) and added features for user support through chat.
+                    &quot;Make My Post&quot; one of the best apps for creating
+                    Indian festival posters. I worked on improving the
+                    app&quot;s appearance (UI) and added features for user
+                    support through chat.
                   </p>
 
                   <div className="mt-14">
@@ -717,7 +717,7 @@ export default function Projects() {
         </div>
       </div>
       <div className="relative z-[99] pt-[80px] md:pt-[150px] bg-white ">
-       <CompaniesIhaveWorked />
+        <CompaniesIhaveWorked />
       </div>
     </div>
   );

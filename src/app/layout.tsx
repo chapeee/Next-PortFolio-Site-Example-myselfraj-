@@ -21,12 +21,7 @@ export default function RootLayout({
     <html lang="en" className="bg-gray-100">
       <body className={inter.className}>
         <Header />
-        <NextTopLoader
-          color="#09757a"
-          initialPosition={0.08}
-          crawlSpeed={200}
-          height={3}
-        />
+<<<<
         {children}
 
         <Newsletter />
