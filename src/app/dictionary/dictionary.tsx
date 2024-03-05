@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import GitGist from "@breww.io/react-nextjs-github-gist";
+import GitGist from "@myselfraj/react-nextjs-github-gist";
 export default function Dictionary() {
   return (
     <div>
