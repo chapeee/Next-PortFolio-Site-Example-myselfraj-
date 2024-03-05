@@ -16,6 +16,7 @@ export default function Dictionary() {
                 Protect Your Routes With Next 14 Routes Middleware
               </a>
             </div>
+            
             <div className="mt-10">
               <GitGist
                 id="1036aa9bf78709602485f0a9f9e47e50"
