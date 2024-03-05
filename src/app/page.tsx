@@ -38,7 +38,7 @@ export default function Home() {
                 <div className="text-1xl font-medium pt-3">Total Clients</div>
               </div>
               <div>
-                <div className="text-5xl">1</div>
+                <div className="text-5xl">3</div>
                 <div className="text-1xl font-medium pt-3">Open Sources</div>
               </div>
               <div>
