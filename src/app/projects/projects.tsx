@@ -411,7 +411,7 @@ export default function Projects() {
         </div>
       </div>
 
-      <div className=" z-[9] relative w-full m-auto  bg-[#1e2b7d]">
+      <div className=" z-[9] relative w-full m-auto  bg-[#36234d]">
         <div className="bg-[#ffe5e2] w-full max-[360px]:h-[76em] max-[375px]:h-[69em] max-[413px]:h-[63em] max-[460px]:h-[58em] max-[580px]:h-[52em] h-[50em] absolute"></div>
         <div className="z-[9] relative">
           <div className=" text-black ">
@@ -516,8 +516,8 @@ export default function Projects() {
           </div>
         </div>
       </div>
-      <div className=" z-[9] relative w-full m-auto  bg-[#edebf9]">
-        <div className="bg-[#1e2b7d] w-full max-[422px]:h-[48em] h-[41em]  md:h-[46em] absolute"></div>
+      <div className=" z-[9] relative w-full m-auto  bg-white">
+        <div className="bg-[#36234d] w-full max-[422px]:h-[48em] h-[41em]  md:h-[46em] absolute"></div>
         <div className="z-[9] relative">
           <div className=" text-white ">
             <div className="container m-auto p-5 md:pt-[120px] pt-[50px] pb-0">
@@ -530,13 +530,10 @@ export default function Projects() {
                     className="text-4xl lg:text-[52px] font-medium  text-left"
                     style={{ lineHeight: "120%" }}
                   >
-                    Make My Post:
+                   Author Dashboard
                   </div>
                   <p className="mt-5 text-[18px] text-gray-200">
-                    &quot;Make My Post&quot; one of the best apps for creating
-                    Indian festival posters. I worked on improving the
-                    app&quot;s appearance (UI) and added features for user
-                    support through chat.
+                    This is an author dashboard designed for a publishing house. Authors can use it to publish books, manage their publications, track earnings from various platforms such as Amazon and Flipkart, and also manage author copies.
                   </p>
 
                   <div className="mt-14">
@@ -547,10 +544,10 @@ export default function Projects() {
                             Project
                           </div>
                           <a
-                            href="https://play.google.com/store/apps/details?id=make.mypost&hl=en_IN&gl=US"
+                            href="https://rosewoodpub.com/"
                             className="underline text-[20px] pt-1 text-gray-200 "
                           >
-                            Make My Post
+                            Rosewood Publications
                           </a>
                         </div>
                       </div>
@@ -558,7 +555,7 @@ export default function Projects() {
                         <div>
                           <div className="text-[18px] text-gray-300">Role</div>
                           <div className="text-[20px] pt-1 text-gray-200">
-                            UI/UX & Dev
+                            Full Stack
                           </div>
                         </div>
                       </div>
@@ -583,16 +580,19 @@ export default function Projects() {
                     Firebase Db
                   </div>
                   <div className="text-[18px] lg:mt-5  bg-transparent text-gray-200 border-gray-400 border  p-2 pl-5 pr-5 rounded-full">
-                    Vanilla js
+                    CI
                   </div>
                   <div className="text-[18px] lg:mt-5  bg-transparent text-gray-200 border-gray-400 border  p-2 pl-5 pr-5 rounded-full">
-                    Laravel
+                    Bootstrap
+                  </div>
+                  <div className="text-[18px] lg:mt-5  bg-transparent text-gray-200 border-gray-400 border  p-2 pl-5 pr-5 rounded-full">
+                    AI to Analyze Sales
                   </div>
                 </div>
               </div>
               <div className="max-w-[900px] m-auto">
                 <Image
-                  src="https://ik.imagekit.io/mq90sdk8y/myselfraj/makemypost.webp?updatedAt=1707110693205"
+                  src="https://ik.imagekit.io/mq90sdk8y/myselfraj/tr:q-70,w-1100/Screenshot%202024-03-07%20at%208.35.11%E2%80%AFAM.png?updatedAt=1709781123222"
                   alt="makemypost"
                   width={0}
                   sizes="100vw"
@@ -611,111 +611,7 @@ export default function Projects() {
           </div>
         </div>
       </div>
-      <div className=" z-[9] relative w-full m-auto  bg-[#fff]">
-        <div className="bg-[#edebf9] w-full max-[381px]:h-[66em] max-[384px]:h-[60em] max-[432px]:h-[58em] h-[53em] absolute"></div>
-        <div className="z-[9] relative">
-          <div className=" text-black ">
-            <div className="container m-auto p-5 md:pt-[120px] pt-[50px] pb-0">
-              <div className="flex lg:justify-between flex-col lg:flex-row">
-                <div className="max-w-[750px]">
-                  <span className="text-[18px] text-gray-600">
-                    Client&apos;s Project
-                  </span>
-                  <div
-                    className="text-4xl lg:text-[52px] font-medium  text-left"
-                    style={{ lineHeight: "120%" }}
-                  >
-                    Oatrx:
-                  </div>
-                  <p className="mt-5 text-[18px] text-gray-700">
-                    I assisted in redesigning their main website and admin
-                    panels. Additionally, I developed an image editor similar to
-                    Canva using Konva.js, integrated Firebase into the system,
-                    and collaborated with other developers to implement a
-                    patient and clinic management system. Furthermore, I
-                    incorporated online video and call consultation features. I
-                    also contributed to the creation of forms and certificates
-                    using HTML and CSS and saving them as pdf into the system.
-                  </p>
 
-                  <div className="mt-14">
-                    <div className="flex gap-4 md:gap-11 flex-wrap">
-                      <div>
-                        <div>
-                          <div className="text-[18px] text-gray-600">
-                            Project
-                          </div>
-                          <a
-                            href="https://oatrx.ca"
-                            className="underline text-[20px] pt-1 text-gray-700 "
-                          >
-                            <u>Oatrx</u>
-                          </a>
-                        </div>
-                      </div>
-                      <div>
-                        <div>
-                          <div className="text-[18px] text-gray-600">Role</div>
-                          <div className="text-[20px] pt-1 text-gray-700">
-                            UI/UX & Dev
-                          </div>
-                        </div>
-                      </div>
-                      <div>
-                        <div>
-                          <div className="text-[18px] text-gray-600">Date</div>
-                          <div className="text-[20px] pt-1 text-gray-700">
-                            2021 - Present
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="flex flex-wrap lg:flex-nowrap lg:flex-col flex-row lg:gap-o gap-4 lg:gap-0 items-start lg:items-end lg:mt-0 mt-10">
-                  <div className=" text-[18px] bg-transparent text-gray-700 border-gray-500 border  p-2 pl-5 pr-5 rounded-full">
-                    Adobe Xd
-                  </div>
-
-                  <div className="text-[18px] lg:mt-5  bg-transparent text-gray-700 border-gray-500 border  p-2 pl-5 pr-5 rounded-full">
-                    Laravel
-                  </div>
-                  <div className="text-[18px] lg:mt-5  bg-transparent text-gray-700 border-gray-500 border  p-2 pl-5 pr-5 rounded-full">
-                    Vanilla js
-                  </div>
-                  <div className="text-[18px] lg:mt-5  bg-transparent text-gray-700 border-gray-500 border  p-2 pl-5 pr-5 rounded-full">
-                    TypeScript
-                  </div>
-                  <div className="text-[18px] lg:mt-5  bg-transparent text-gray-700 border-gray-500 border  p-2 pl-5 pr-5 rounded-full">
-                    Konva Js
-                  </div>
-                  <div className="text-[18px] lg:mt-5  bg-transparent text-gray-700 border-gray-500 border  p-2 pl-5 pr-5 rounded-full">
-                    Firebase
-                  </div>
-                </div>
-              </div>
-              <div className="max-w-[900px] m-auto">
-                <Image
-                  src="https://ik.imagekit.io/mq90sdk8y/myselfraj/tr:q:90,w-1000/oatrx.png?updatedAt=1707112021220"
-                  alt="oatrx"
-                  width={0}
-                  sizes="100vw"
-                  height={300}
-                  className="mt-[50px] md:mt-[100px]"
-                  style={{
-                    width: "100%",
-                    height: "100%",
-                    objectFit: "cover",
-                    borderRadius: "8px",
-                  }}
-                  loading="lazy"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       <div className="relative z-[99] pt-[80px] md:pt-[150px] bg-white ">
         <CompaniesIhaveWorked />
       </div>
