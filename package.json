@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@myselfraj/react-nextjs-github-gist": "^1.0.7",
+    "@myselfraj/react-nextjs-github-gist": "^1.1.2",
     "@portabletext/react": "^3.0.11",
     "@sanity/block-content-to-react": "^3.0.0",
     "@sanity/client": "^6.12.3",
