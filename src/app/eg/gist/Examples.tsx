@@ -1,4 +1,4 @@
-
+"use client"
 import React from "react";
 import GitGist from "@myselfraj/react-nextjs-github-gist";
 export default function Examples() {
@@ -7,7 +7,7 @@ export default function Examples() {
       <h2 className="text-4xl mb-5">Gist Cod Sample</h2>
       <code>
         <pre>
-       
+        &quot;use client&quot;<br/> 
           import GitGist from &quot;@myselfraj/react-nextjs-github-gist&quot;;<br /><br />
           &lt;GitGist 
           <br />id=&quot;1036aa9bf78709602485f0a9f9e47e50&quot; <br />
