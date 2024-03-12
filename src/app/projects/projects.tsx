@@ -124,12 +124,14 @@ export default function Projects() {
                     React Nextjs Github Gist:
                   </div>
                   <p className="mt-5 text-[18px] text-gray-300">
-                  A package help you to add github gist in react and next client side with username and avatar with 900+ weekly Downloads.
+                    A package help you to add github gist in react and next
+                    client side with username and avatar with 900+ weekly
+                    Downloads.
                   </p>
                   <div className="mt-14 max-w-[400px]">
                     <div className="mockup-code">
                       <pre data-prefix="$" className="text-warning">
-                        <code>npm i "@myselfraj/react-nextjs-github-gist"</code>
+                        <code>npm i &quot;@myselfraj/react-nextjs-github-gist&quot;</code>
                       </pre>
                       <pre data-prefix=">">
                         <code>installing...</code>
@@ -150,8 +152,7 @@ export default function Projects() {
                             href="https://www.npmjs.com/package/@myselfraj/react-nextjs-github-gist"
                             className="text-[20px] pt-1 text-gray-100 underline"
                           >
-                          @myselfraj/react-nextjs-github-gist
-
+                            @myselfraj/react-nextjs-github-gist
                           </a>
                         </div>
                       </div>
@@ -176,7 +177,7 @@ export default function Projects() {
                 </div>
 
                 <div className="flex flex-wrap lg:flex-nowrap lg:flex-col flex-row lg:gap-o gap-4 lg:gap-0 items-start lg:items-end lg:mt-0 mt-10">
-                <div className=" text-[18px] lg:mt-5 bg-transparent text-gray-200 border-gray-200 border  p-2 pl-5 pr-5 rounded-full">
+                  <div className=" text-[18px] lg:mt-5 bg-transparent text-gray-200 border-gray-200 border  p-2 pl-5 pr-5 rounded-full">
                     React/Next
                   </div>
                   <div className="text-[18px] bg-transparent text-gray-200 border-gray-200 border  p-2 pl-5 pr-5 rounded-full">
@@ -188,7 +189,6 @@ export default function Projects() {
                   <div className="text-[18px] lg:mt-5 bg-transparent text-gray-200 border-gray-200 border  p-2 pl-5 pr-5 rounded-full">
                     Tsdx
                   </div>
-                 
                 </div>
               </div>
             </div>
@@ -617,10 +617,13 @@ export default function Projects() {
                     className="text-4xl lg:text-[52px] font-medium  text-left"
                     style={{ lineHeight: "120%" }}
                   >
-                   Author Dashboard
+                    Author Dashboard
                   </div>
                   <p className="mt-5 text-[18px] text-gray-200">
-                    This is an author dashboard designed for a publishing house. Authors can use it to publish books, manage their publications, track earnings from various platforms such as Amazon and Flipkart, and also manage author copies.
+                    This is an author dashboard designed for a publishing house.
+                    Authors can use it to publish books, manage their
+                    publications, track earnings from various platforms such as
+                    Amazon and Flipkart, and also manage author copies.
                   </p>
 
                   <div className="mt-14">
