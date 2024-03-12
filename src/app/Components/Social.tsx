@@ -20,6 +20,11 @@ export default function Social() {
             Github
           </div>
         </a>
+        <a target="_blank" href="https://www.npmjs.com/~chapeee">
+          <div className="bg-gray-200 p-2 text-4xl font-medium min-w-[300px] min-h-[300px] flex items-center justify-center">
+            NPM
+          </div>
+        </a>
       </div>
     </div>
   );

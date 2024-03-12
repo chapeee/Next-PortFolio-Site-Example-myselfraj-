@@ -108,6 +108,93 @@ export default function Projects() {
           </div>
         </div>
       </div>
+      <div className="w-full m-auto bg-gray-100 ">
+        <div className="z-[9] relative bg-gray-100">
+          <div className="bg-[#0F084E] text-white pt-[100px] pb-[100px]">
+            <div className="container m-auto p-5 pt-0 pb-0">
+              <div className="flex lg:justify-between flex-col lg:flex-row">
+                <div className="max-w-[750px]">
+                  <span className="text-[18px] text-gray-400">
+                    My Open Source Library Creation
+                  </span>
+                  <div
+                    className="text-4xl lg:text-[52px] font-medium  text-left"
+                    style={{ lineHeight: "120%" }}
+                  >
+                    React Nextjs Github Gist:
+                  </div>
+                  <p className="mt-5 text-[18px] text-gray-300">
+                  A package help you to add github gist in react and next client side with username and avatar with 900+ weekly Downloads.
+                  </p>
+                  <div className="mt-14 max-w-[400px]">
+                    <div className="mockup-code">
+                      <pre data-prefix="$" className="text-warning">
+                        <code>npm i "@myselfraj/react-nextjs-github-gist"</code>
+                      </pre>
+                      <pre data-prefix=">">
+                        <code>installing...</code>
+                      </pre>
+                      <pre data-prefix=">" className="text-success">
+                        <code>Done ready to use!</code>
+                      </pre>
+                    </div>
+                  </div>
+                  <div className="mt-14">
+                    <div className="flex gap-4 md:gap-11 flex-wrap">
+                      <div>
+                        <div>
+                          <div className="text-[18px] text-gray-500">
+                            Project
+                          </div>
+                          <a
+                            href="https://www.npmjs.com/package/@myselfraj/react-nextjs-github-gist"
+                            className="text-[20px] pt-1 text-gray-100 underline"
+                          >
+                          @myselfraj/react-nextjs-github-gist
+
+                          </a>
+                        </div>
+                      </div>
+                      <div>
+                        <div>
+                          <div className="text-[18px] text-gray-500">Role</div>
+                          <div className="text-[20px] pt-1 text-gray-100">
+                            Full Stack
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div>
+                          <div className="text-[18px] text-gray-500">Date</div>
+                          <div className="text-[20px] pt-1 text-gray-100">
+                            2024 - Present
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex flex-wrap lg:flex-nowrap lg:flex-col flex-row lg:gap-o gap-4 lg:gap-0 items-start lg:items-end lg:mt-0 mt-10">
+                <div className=" text-[18px] lg:mt-5 bg-transparent text-gray-200 border-gray-200 border  p-2 pl-5 pr-5 rounded-full">
+                    React/Next
+                  </div>
+                  <div className="text-[18px] bg-transparent text-gray-200 border-gray-200 border  p-2 pl-5 pr-5 rounded-full">
+                    Javascript
+                  </div>
+                  <div className="text-[18px] lg:mt-5 bg-transparent text-gray-200 border-gray-200 border  p-2 pl-5 pr-5 rounded-full">
+                    Typescript
+                  </div>
+                  <div className="text-[18px] lg:mt-5 bg-transparent text-gray-200 border-gray-200 border  p-2 pl-5 pr-5 rounded-full">
+                    Tsdx
+                  </div>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="bg-[#d7eef0] z-[9] relative w-full md:pt-[120px] pt-[50px]">
         {" "}
       </div>

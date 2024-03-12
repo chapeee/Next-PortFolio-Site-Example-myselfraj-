@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@myselfraj/is-business-mail": "^1.0.11",
     "@myselfraj/react-nextjs-github-gist": "^2.0.1",
     "@portabletext/react": "^3.0.11",
     "@sanity/block-content-to-react": "^3.0.0",

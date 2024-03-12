@@ -24,7 +24,7 @@ export default function RootLayout({
 
         {children}
         <Newsletter />
-        <div className="bg-white w-full text-center pb-14">
+        <div className="bg-white grid grid-cols-1 sm:grid-cols-3 w-full text-center pb-14">
           <a
             href="https://www.linkedin.com/in/myselfraj/"
             className="text-2xl m-2 font-medium underline text-gray-800"
@@ -36,6 +36,12 @@ export default function RootLayout({
             className="text-2xl m-2 font-medium underline text-gray-800"
           >
             Check My GitHub
+          </a>
+          <a
+            href="https://www.npmjs.com/~chapeee"
+            className="text-2xl m-2 font-medium underline text-gray-800"
+          >
+            My Js/Ts Packages
           </a>
         </div>
       </body>
