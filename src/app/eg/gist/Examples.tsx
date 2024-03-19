@@ -4,7 +4,7 @@ import GitGist from "@myselfraj/react-nextjs-github-gist";
 export default function Examples() {
   return (
     <div className="mt-10 container m-auto">
-      <h2 className="text-4xl mb-5">Gist Cod Sample</h2>
+      <h2 className="text-4xl mb-5">Gist Code Sample</h2>
       <code>
         <pre>
         &quot;use client&quot;<br/> 
