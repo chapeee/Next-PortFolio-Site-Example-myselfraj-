@@ -4,6 +4,7 @@ import "./globals.css";
 import Newsletter from "./Components/Newsletter";
 import NextTopLoader from 'nextjs-toploader';
 import Header from "./Components/Header";
+import Footer from "./Components/Footer";
 const inter = Playfair_Display({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -24,26 +25,8 @@ export default function RootLayout({
 
         {children}
         <Newsletter />
-        <div className="bg-white grid grid-cols-1 sm:grid-cols-3 w-full text-center pb-14">
-          <a
-            href="https://www.linkedin.com/in/myselfraj/"
-            className="text-2xl m-2 font-medium underline text-gray-800"
-          >
-            Follow on Linkedin
-          </a>
-          <a
-            href="https://github.com/chapeee"
-            className="text-2xl m-2 font-medium underline text-gray-800"
-          >
-            Check My GitHub
-          </a>
-          <a
-            href="https://www.npmjs.com/~chapeee"
-            className="text-2xl m-2 font-medium underline text-gray-800"
-          >
-            My Js/Ts Packages
-          </a>
-        </div>
+       
+        <Footer />
       </body>
     </html>
   );
