@@ -82,13 +82,13 @@ export default function Newsletter() {
 
   if (subscribed) {
     return (
-      <div className="w-full bg-white text-black pt-[100px] pb-[100px]">
-        <div className="container p-5 m-auto text-center">
+      <div className="w-full bg-transparent text-white pt-[100px] pb-[100px]">
+        <div className=" p-5 m-auto bg-transparent text-center">
           <h2 className="text-4xl font-medium">😊 Cool! You are Already Subscribed</h2>
           <p className="mt-2">You&apos;re signed up with the email address: {subscribedEmail}</p>
-          <p className="text-gray-500 text-[14px] pt-2">
+          <p className="text-gray-200 text-[14px] pt-2">
             If you find this as a mistake:{" "}
-            <span className="text-black underline " onClick={handleUpdateEmail}>Update Email</span>
+            <span className="text-300 underline " onClick={handleUpdateEmail}>Update Email</span>
           </p>
         </div>
       </div>
@@ -97,8 +97,8 @@ export default function Newsletter() {
 
   if (subscriptionSuccess) {
     return (
-      <div className="w-full bg-white text-black pt-[100px] pb-[100px]">
-        <div className="container p-5 m-auto text-center">
+      <div className="w-full  text-white pt-[100px] pb-[100px]">
+        <div className=" p-5 m-auto text-center">
           <h2 className="text-4xl font-medium">Thank you for subscribing!</h2>
         </div>
       </div>
@@ -106,8 +106,8 @@ export default function Newsletter() {
   }
 
   return (
-    <div className="w-full bg-white text-black pt-[100px] pb-[100px]">
-      <div className="container p-5 m-auto text-center">
+    <div className="w-full text-white pt-[100px] pb-[100px]">
+      <div className=" p-5 m-auto text-center">
         <h2 className="text-4xl font-medium">Join my newsletter</h2>
         <p className="text-[18px] max-w-[700px] m-auto mt-5">
           By joining my newsletter, you&apos;ll receive updates on the latest

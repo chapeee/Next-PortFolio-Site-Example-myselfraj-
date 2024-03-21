@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Playfair_Display } from "next/font/google";
 import "./globals.css";
-import Newsletter from "./Components/Newsletter";
 import NextTopLoader from 'nextjs-toploader';
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
@@ -24,7 +23,7 @@ export default function RootLayout({
         <Header />
 
         {children}
-        <Newsletter />
+       
        
         <Footer />
       </body>
