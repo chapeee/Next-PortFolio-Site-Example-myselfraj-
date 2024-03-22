@@ -7,13 +7,14 @@ import Technology from "./Components/Technology";
 import DigitalMarvels from "./Components/Homepage/DigitalMarvels";
 import MoreAchiev from "./Components/Homepage/MoreAchiev";
 import CompaniesIhaveWorked from "./Components/CompaniesIhaveWorked";
+import Achievments from "./Components/Achievments";
 export default function Home() {
 
   return (
     <main className="w-100 bg-gray-100 text-black" id="">
       <div className="w-full lg:min-h-[100vh] lg:sticky lg:pb-[150px] pb-[70px] lg:top-[150px] z-0">
         <div className="container p-5 pt-[70px] md:pt-[90px] m-auto text-center relative">
-        <div className="badge bg-siteDefaultColor text-white p-3 pl-4 pr-4 mb-5 text-[16px]">Building &nbsp;<a href="grapdevs.com"> Grapdevs</a></div>
+          <div className="badge bg-siteDefaultColor text-white p-3 pl-4 pr-4 mb-5 text-[16px]">Building &nbsp;<a href="grapdevs.com"> Grapdevs</a></div>
           <h1 className="text-[60px] sm:text-[64px] md:text-7xl lg:text-[86px] xlg:text-8xl leading-[120%]">
             Hi! I am <u>Rajneesh</u> AKA
             <span className="text-siteDefaultColor font-bold mt-10 rounded-lg ml-4 pl-3 pr-3">
@@ -50,6 +51,7 @@ export default function Home() {
         </div>
       </div>
       <DigitalMarvels />
+
       <div
         id="starthere"
         className="container m-auto pt-[100px] bg-gray-100 z-[99] relative "
@@ -57,11 +59,14 @@ export default function Home() {
         <div className="">
           <WeDeliver />
         </div>
+
       </div>
+
+
       <div>
         <MoreAchiev />
       </div>
-
+      <div className="bg-gray-200  z-[99] relative "> <Achievments /></div>
 
       <Technology />
       <HomeWriting />
@@ -69,7 +74,7 @@ export default function Home() {
         <HomeLearn />
       </div>
       <div className="relative z-[99] pt-[80px] md:pt-[150px] bg-white border-b-2 pb-[80px] md:pb-[150px]">
-       <CompaniesIhaveWorked />
+        <CompaniesIhaveWorked />
       </div>
     </main>
   );
