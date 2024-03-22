@@ -702,7 +702,7 @@ export default function Projects() {
         </div>
       </div>
 
-      <div className="relative z-[99] pt-[80px] md:pt-[150px] bg-white ">
+      <div className="relative z-[99] pt-[80px] md:pt-[150px] pb-14 bg-white ">
         <CompaniesIhaveWorked />
       </div>
     </div>

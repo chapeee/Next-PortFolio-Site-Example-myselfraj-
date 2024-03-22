@@ -16,6 +16,7 @@ export default function LearnTech() {
        <p className="text-[20px] mt-10 -mb-[80px]"><b className="text-[red] ">Coming soon!</b> I&quot;m crafting technology insights just for you. As soon as the latest knowledge is ready to hit the public stage, we&quot;ll shoot you an email. Stay in the loop by subscribing to our newsletter to stay informed and up-to-date.</p>
 
       </div>
+      <div className="pb-[180px]"></div>
     </div>
   );
 }
