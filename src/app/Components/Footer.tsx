@@ -9,7 +9,7 @@ export default function Footer({ }: Props) {
             <div className="container m-auto">
             <Newsletter  />
                 <div className=" pt-0 mb-0 md:p-10 p-7 pb-0 -mt-[100px] md:-mt-[80px]">
-                    <div className='text-[17vw] text-center text-white font-medium' style={{lineHeight:"94%"}}>Rajneesh</div>
+                    <div className='text-[17vw] text-center text-white font-medium' style={{lineHeight:"94%"}}>Thank you</div>
                 </div></div>
                 <div className='pb-0 w-full p-4' style={{ borderTop: "1px solid #fff" }}></div>
                 <div className=" grid grid-cols-1  sm:grid-cols-3 w-full text-center pb-5 max-w-[900px] text-gray-100 m-auto" >
