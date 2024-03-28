@@ -66,7 +66,7 @@ export default function Home() {
       <div>
         <MoreAchiev  />
       </div>
-      {/* <div className="bg-gray-200  z-[99] relative "> <Achievments /></div> */}
+      <div className="bg-gray-200  z-[99] relative "> <Achievments /></div>
 
       <Technology />
       <HomeWriting />

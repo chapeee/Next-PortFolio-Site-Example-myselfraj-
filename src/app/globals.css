@@ -83,3 +83,9 @@ html,body{
   font-size: 25px;
   font-weight: 700;
 }
+.translate-x-cutom{
+  transform: translate(-1.5rem);
+}
+.translate-y-cutom{
+  transform: translateY(-1.6rem);
+}
