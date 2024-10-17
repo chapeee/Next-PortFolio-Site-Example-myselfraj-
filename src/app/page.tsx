@@ -12,7 +12,7 @@ export default function Home() {
 
   return (
     <main className="w-100 bg-gray-100 text-black" id="">
-      <div className="w-full lg:min-h-[100vh] lg:sticky lg:pb-[150px] pb-[70px] lg:top-[150px] z-0">
+      <div className="w-full lg:min-h-[100vh] xl:min-h-[1000px] lg:sticky lg:pb-[150px] pb-[70px] lg:top-[150px] z-0">
         <div className="container p-5 pt-[70px] md:pt-[90px] m-auto text-center relative">
           <div className="badge bg-siteDefaultColor text-white p-3 pl-4 pr-4 mb-5 text-[16px]">Building &nbsp;<a href="grapdevs.com"> Grapdevs</a></div>
           <h1 className="text-[60px] sm:text-[64px] md:text-7xl lg:text-[86px] xlg:text-8xl leading-[120%]">

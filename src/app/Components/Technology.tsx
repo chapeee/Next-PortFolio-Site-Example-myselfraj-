@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Technology() {
   return (
-    <div className="w-full bg-siteDefaultColor text-white  min-h-[100vh] relative z-[999]">
+    <div className="w-full bg-siteDefaultColor text-white  lg:min-h-[100vh]  xl:min-h-[100%] relative z-[999]">
       <div className="container p-5 m-auto pt-[100px] pb-[100px]">
         <div className="">
           <h2
