@@ -27,17 +27,20 @@ export default async function Page({ params }: { params: { slug: string } }) {
 
   return (
     <div>
-      <div className="w-full blog-page-myselfraj bg-gray-100 text-black pt-[50px] md:pt-[100px] pb-[50px] md:pb-[100px]">
-        <h2 className="max-w-[1000px] m-auto pt-3 text-4xl md:text-4xl lg:text-6xl font-medium leading-[120%] md:leading-[140%] text-center">
+      <div className="w-full blog-page-myselfraj bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white pt-[50px] md:pt-[100px] pb-[50px] md:pb-[100px] relative overflow-hidden">
+        {/* Background gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-accent/5 via-secondary/5 to-tertiary/5"></div>
+        
+        <h2 className="max-w-[1000px] m-auto pt-3 text-4xl md:text-4xl lg:text-6xl font-medium leading-[120%] md:leading-[140%] text-center bg-gradient-to-r from-white via-gray-200 to-accent bg-clip-text text-transparent relative z-10">
           {data?.title}
         </h2>
-        <div className="container p-9 pt-0 m-auto text-center max-w-[900px]">
+        <div className="container p-9 pt-0 m-auto text-center max-w-[900px] relative z-10">
           {!data ? (
             <div>
-              <p className="text-4xl md:text-6xl text-gray-700 min-h-[70vh]">
+              <p className="text-4xl md:text-6xl text-gray-400 min-h-[70vh]">
                 Oops you landed on the Mars.
               </p>
-              <p className="text-[15px]">404 Page Not Found</p>
+              <p className="text-[15px] text-gray-500">404 Page Not Found</p>
             </div>
           ) : (
             <div>
@@ -53,7 +56,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
                     width={0}
                     sizes="100vw"
                     height={300}
-                    className="mt-[50px] md:mt-[100px]  "
+                    className="mt-[50px] md:mt-[100px] border-2 border-gray-700 hover:border-accent transition-all duration-300 shadow-xl shadow-accent/20"
                     style={{
                       width: "100%",
                       height: "auto",
@@ -64,7 +67,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
                   />
                 )}
               </div>
-              <div className="mt-10 text-gray-600 max-w-[900px] m-auto  text-left text-[20px]">
+              <div className="mt-10 text-gray-300 max-w-[900px] m-auto text-left text-[20px] leading-relaxed">
                 <BlockContent
                   blocks={data.body}
                   projectId="1vkh2vq0"
