@@ -3,27 +3,25 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 15, 23, 42;
+  --background-end-rgb: 30, 41, 59;
+  --accent-color: #6366f1;
+  --secondary-color: #8b5cf6;
+  --tertiary-color: #06b6d4;
 }
 
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    135deg,
+    #0f172a 0%,
+    #1e293b 25%,
+    #334155 50%,
+    #475569 75%,
+    #64748b 100%
+  );
+  min-height: 100vh;
 }
 
 @layer utilities {
@@ -39,53 +37,162 @@ html, body {
 /* Firefox */
 *{
   scrollbar-width: thin;
-  scrollbar-color: #000000 #FFFFFF;
+  scrollbar-color: #6366f1 #1e293b;
 }
 
 /* Other browsers */
 *::-webkit-scrollbar{
-  width: 5px;
+  width: 8px;
 }
 
 *::-webkit-scrollbar-track{
-  background: #FFFFFF;
+  background: #1e293b;
+  border-radius: 4px;
 }
 
 *::-webkit-scrollbar-thumb{
-  background-color: #000000;
-  border-radius: 0px;
-  border: 3px solid #FFFFFF;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  border-radius: 4px;
+  border: 1px solid #334155;
 }
+
+*::-webkit-scrollbar-thumb:hover{
+  background: linear-gradient(135deg, #8b5cf6, #06b6d4);
+}
+
 html,body{
-  background: #f3f4f7 !important;
+  background: linear-gradient(
+    135deg,
+    #0f172a 0%,
+    #1e293b 25%,
+    #334155 50%,
+    #475569 75%,
+    #64748b 100%
+  ) !important;
+  color: #f8fafc;
 }
+
 .code-snipit pre{
-  background: rgb(212 228 229) !important;
-  border-radius: 10px !important;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background: linear-gradient(135deg, #1e293b, #334155) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(99, 102, 241, 0.1);
+  border: 1px solid #374151;
 }
+
+.blog-page-myselfraj {
+  color: #f8fafc;
+}
+
 .blog-page-myselfraj ol{
   list-style-type: decimal;
+  color: #e2e8f0;
 }
 
 .blog-page-myselfraj ul{
   list-style-type: disc;
+  color: #e2e8f0;
 }
+
 .blog-page-myselfraj figure{
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
 .blog-page-myselfraj p {
   padding-top: 10px;
   padding-bottom: 10px;
+  color: #cbd5e1;
 }
+
 .blog-page-myselfraj h3{
   font-size: 25px;
   font-weight: 700;
+  color: #f1f5f9;
 }
+
+/* GSAP Animation Classes */
+.gsap-fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.gsap-slide-in-left {
+  opacity: 0;
+  transform: translateX(-50px);
+}
+
+.gsap-slide-in-right {
+  opacity: 0;
+  transform: translateX(50px);
+}
+
+.gsap-scale-in {
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+.gsap-text-reveal {
+  overflow: hidden;
+}
+
+.gsap-text-reveal span {
+  display: inline-block;
+  transform: translateY(100%);
+}
+
+/* Gradient Text Effects */
+.gradient-text {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6, #06b6d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-secondary {
+  background: linear-gradient(135deg, #f59e0b, #ef4444, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Card Styles with Gradients */
+.dark-card {
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.8), rgba(51, 65, 85, 0.6));
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.dark-card:hover {
+  border-color: rgba(99, 102, 241, 0.4);
+  box-shadow: 0 25px 50px -12px rgba(99, 102, 241, 0.15);
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
+
+/* Button Styles */
+.gradient-button {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+}
+
+.gradient-button:hover {
+  background: linear-gradient(135deg, #8b5cf6, #06b6d4);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(99, 102, 241, 0.4);
+}
+
 .translate-x-cutom{
   transform: translate(-1.5rem);
 }
+
 .translate-y-cutom{
   transform: translateY(-1.6rem);
 }
