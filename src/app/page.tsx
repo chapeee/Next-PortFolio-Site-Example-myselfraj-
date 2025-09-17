@@ -1,181 +1,308 @@
-"use client"
-import React, { useEffect, useRef } from "react";
-import WeDeliver from "./Components/WeDeliver";
-import "aos/dist/aos.css";
-import HomeWriting from "./Components/HomeWriting";
-import HomeLearn from "./Components/HomeLearn";
-import Technology from "./Components/Technology";
-import DigitalMarvels from "./Components/Homepage/DigitalMarvels";
-import MoreAchiev from "./Components/Homepage/MoreAchiev";
+import Image, { type StaticImageData } from "next/image";
+import Link from "next/link";
 import CompaniesIhaveWorked from "./Components/CompaniesIhaveWorked";
-import Achievments from "./Components/Achievments";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import HomeLearn from "./Components/HomeLearn";
+import HomeWriting from "./Components/HomeWriting";
+import Technology from "./Components/Technology";
+import heroPortrait from "./assets/rajneesh.png";
 
-gsap.registerPlugin(ScrollTrigger);
+const heroStats = [
+  { value: "100+", label: "Projects shipped" },
+  { value: "40+", label: "Clients partnered" },
+  { value: "15+", label: "Technologies worked with" },
+];
+
+type HeroHighlight = {
+  tag: string;
+  quote: string;
+  name: string;
+  role: string;
+  accent: string;
+  image: StaticImageData;
+};
+
+const heroHighlights: HeroHighlight[] = [
+  {
+    tag: "Building Grapdevs",
+    quote:
+      "I engage in the art of creation, a visionary who believes in the power of building visionary products.",
+    name: "Rajneesh Raj",
+    role: "Founder, Grapdevs",
+    accent: "from-accent/30 via-accent/10 to-transparent border-accent/40",
+    image: heroPortrait,
+  },
+  {
+    tag: "Projects launched",
+    quote:
+      "I have worked on over 100 projects, using more than 15 different technologies. These projects have been launched on various platforms, many of which have gained millions of users.",
+    name: "Projects & Clients",
+    role: "100+ projects • 40+ clients",
+    accent: "from-secondary/30 via-secondary/10 to-transparent border-secondary/40",
+    image: heroPortrait,
+  },
+  {
+    tag: "Journey since 2014",
+    quote:
+      "My official coding voyage began in 2014. PHP was the first language I tackled, along with HTML and CSS.",
+    name: "Full-stack & Front-end",
+    role: "Builder across 15+ technologies",
+    accent: "from-tertiary/30 via-tertiary/10 to-transparent border-tertiary/40",
+    image: heroPortrait,
+  },
+];
+
+const storyBullets = [
+  "Back in fourth grade, the magic happened—I got my hands on my first computer!",
+  "Back in 5th grade, my dad walked in with a command prompt book that ignited my curiosity for the terminal.",
+  "Then, in 6th grade, I crafted my very first HTML page with the help of a senior's notes.",
+];
+
+type ProjectHighlight = {
+  id: string;
+  title: string;
+  description: string;
+  meta: string;
+  accent: string;
+};
+
+const projectHighlights: ProjectHighlight[] = [
+  {
+    id: "01",
+    title: "VLE Platform",
+    description:
+      "I began this Virtual learning environment project as a college assignment during my final semester. Later, when I started freelancing, a client needed a similar solution. I introduced them with my platform, they liked it, and requested some modifications. We ended up making around 45% changes according to their requirements, and eventually, I sold the customized platform to them.",
+    meta: "Full Stack Developer • 2020 – 2022",
+    accent: "border-accent/50 bg-gradient-to-br from-accent/10 via-slate-900/50 to-transparent",
+  },
+  {
+    id: "02",
+    title: "Water harvesting",
+    description:
+      "Create an Internet of Things (IoT) web application for water harvesting that enables users to track and assess their water savings across various areas such as bathrooms, gardens, and pools. The app also calculates the overall water savings and provides a ranking to determine if the collected water is suitable for reuse for which areas.",
+    meta: "Front-end & API Developer • 2021 – 2022",
+    accent: "border-secondary/50 bg-gradient-to-br from-secondary/10 via-slate-900/50 to-transparent",
+  },
+  {
+    id: "03",
+    title: "TV App",
+    description:
+      "I made a TV app for a company. I designed it and assisted the developers in getting channels and playing both channels and movies. My main focus was on making sure the player could handle subtitles during video playback, playing video and managing the subscription same as Netflix.com.",
+    meta: "UI/UX & Front-end • 2023",
+    accent: "border-tertiary/50 bg-gradient-to-br from-tertiary/10 via-slate-900/50 to-transparent",
+  },
+];
 
 export default function Home() {
-  const heroRef = useRef<HTMLDivElement>(null);
-  const titleRef = useRef<HTMLHeadingElement>(null);
-  const subtitleRef = useRef<HTMLParagraphElement>(null);
-  const statsRef = useRef<HTMLDivElement>(null);
-  const badgeRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    if (titleRef.current && subtitleRef.current && statsRef.current && badgeRef.current) {
-      // Animate badge
-      gsap.fromTo(badgeRef.current,
-        { opacity: 0, y: -30, scale: 0.8 },
-        { 
-          opacity: 1, 
-          y: 0, 
-          scale: 1,
-          duration: 0.8,
-          ease: "back.out(1.7)"
-        }
-      );
-
-      // Split text animation for main title
-      const titleText = titleRef.current.textContent;
-      if (titleText) {
-        titleRef.current.innerHTML = titleText
-          .split('')
-          .map(char => char === ' ' ? ' ' : `<span class="char">${char}</span>`)
-          .join('');
-        
-        const chars = titleRef.current.querySelectorAll('.char');
-        gsap.fromTo(chars,
-          { opacity: 0, y: 50, rotationX: -90 },
-          {
-            opacity: 1,
-            y: 0,
-            rotationX: 0,
-            duration: 0.8,
-            stagger: 0.02,
-            ease: "back.out(1.7)",
-            delay: 0.3
-          }
-        );
-      }
-
-      // Animate subtitle with highlight effect on scroll
-      gsap.fromTo(subtitleRef.current,
-        { opacity: 0, y: 30 },
-        { 
-          opacity: 1, 
-          y: 0, 
-          duration: 1,
-          delay: 1,
-          ease: "power2.out"
-        }
-      );
-
-      // Create scrolling highlight effect for subtitle
-      ScrollTrigger.create({
-        trigger: subtitleRef.current,
-        start: "top 80%",
-        end: "bottom 20%",
-        onUpdate: (self) => {
-          const progress = self.progress;
-          gsap.to(subtitleRef.current, {
-            backgroundImage: `linear-gradient(90deg, 
-              rgb(var(--accent)) 0%, 
-              rgb(var(--secondary)) ${progress * 100}%, 
-              transparent ${progress * 100}%)`,
-            backgroundClip: 'text',
-            WebkitBackgroundClip: 'text',
-            color: progress > 0.1 ? 'transparent' : 'inherit',
-            duration: 0.3
-          });
-        }
-      });
-
-      // Animate stats cards
-      const statCards = statsRef.current.children;
-      gsap.fromTo(statCards,
-        { opacity: 0, y: 50, scale: 0.8 },
-        {
-          opacity: 1,
-          y: 0,
-          scale: 1,
-          duration: 0.8,
-          stagger: 0.1,
-          delay: 1.5,
-          ease: "back.out(1.7)"
-        }
-      );
-    }
-  }, []);
-
   return (
-    <main className="w-100 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white relative overflow-hidden" id="">
-      {/* Background gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-accent/5 via-secondary/5 to-tertiary/5"></div>
-      
-      <div ref={heroRef} className="w-full lg:min-h-[100vh] xl:min-h-[1000px] lg:sticky lg:pb-[150px] pb-[70px] lg:top-[150px] z-0 relative">
-        <div className="container p-5 pt-[70px] md:pt-[90px] m-auto text-center relative z-10">
-          <div ref={badgeRef} className="badge bg-gradient-to-r from-accent to-secondary text-white p-3 pl-4 pr-4 mb-5 text-[16px] shadow-lg shadow-accent/25">
-            Building &nbsp;<a href="grapdevs.com" className="underline hover:text-gray-200"> Grapdevs</a>
+    <main className="bg-slate-950 text-slate-100">
+      <section className="relative isolate overflow-hidden border-b border-slate-800/50">
+        <div className="absolute inset-0 -z-20 bg-[radial-gradient(circle_at_top,_rgba(99,102,241,0.15),_rgba(15,23,42,0))]"></div>
+        <div className="absolute inset-y-0 right-[-30%] top-[-20%] -z-10 h-[400px] w-[400px] rounded-full bg-[radial-gradient(circle,_rgba(6,182,212,0.3),_rgba(15,23,42,0))]"></div>
+        <div className="mx-auto grid max-w-6xl gap-16 px-6 py-24 lg:grid-cols-[1.05fr,0.95fr] lg:py-28">
+          <div className="space-y-10">
+            <div className="flex flex-wrap gap-3 text-sm text-slate-300">
+              <span className="rounded-full border border-slate-700/50 bg-slate-900/60 px-4 py-1">
+                Founder @ Grapdevs
+              </span>
+              <span className="rounded-full border border-slate-700/50 bg-slate-900/60 px-4 py-1">
+                Full-stack product builder
+              </span>
+            </div>
+            <div className="space-y-6">
+              <h1 className="text-4xl font-semibold leading-tight text-white sm:text-5xl lg:text-[58px]">
+                Hi! I am Rajneesh — your trusted partner for visionary products.
+              </h1>
+              <p className="text-lg text-slate-300 sm:text-xl">
+                I engage in the art of creation, a visionary who believes in the power of building visionary products. See you on Mars 🚀...
+              </p>
+              <p className="text-lg text-slate-300 sm:text-xl">
+                I have worked on over 100 projects, using more than 15 different technologies. These projects have been launched on various platforms, many of which have gained millions of users.
+              </p>
+            </div>
+            <div className="flex flex-wrap gap-4">
+              <Link
+                href="/projects"
+                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-accent to-secondary px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-accent/30 transition hover:from-secondary hover:to-tertiary"
+              >
+                View Projects
+                <span aria-hidden>→</span>
+              </Link>
+              <Link
+                href="/about"
+                className="inline-flex items-center gap-2 rounded-full border border-slate-700/70 px-6 py-3 text-sm font-semibold text-slate-200 transition hover:border-accent/60 hover:text-white"
+              >
+                Read my story
+                <span aria-hidden>↗</span>
+              </Link>
+            </div>
+            <div className="grid gap-4 sm:grid-cols-3">
+              {heroStats.map((stat) => (
+                <div
+                  key={stat.label}
+                  className="rounded-2xl border border-slate-800/60 bg-slate-900/50 p-6 shadow-lg shadow-black/30"
+                >
+                  <div className="text-3xl font-semibold text-white sm:text-4xl">{stat.value}</div>
+                  <div className="mt-2 text-sm text-slate-400">{stat.label}</div>
+                </div>
+              ))}
+            </div>
           </div>
-          <h1 ref={titleRef} className="text-[60px] sm:text-[64px] md:text-7xl lg:text-[86px] xlg:text-8xl leading-[120%] font-bold bg-gradient-to-r from-white via-gray-200 to-gray-300 bg-clip-text text-transparent">
-            Hi! I am <u className="decoration-accent">Rajneesh</u> AKA
-            <span className="text-accent font-bold mt-10 rounded-lg ml-4 pl-3 pr-3 bg-gradient-to-r from-accent/20 to-secondary/20 backdrop-blur-sm border border-accent/30">
-              Raj
+          <div className="grid gap-6">
+            {heroHighlights.map((highlight) => (
+              <div
+                key={highlight.tag}
+                className={`relative overflow-hidden rounded-3xl border ${highlight.accent} p-6 shadow-xl shadow-black/30 backdrop-blur-lg`}
+              >
+                <div className="text-xs uppercase tracking-[0.3em] text-slate-300/80">
+                  {highlight.tag}
+                </div>
+                <p className="mt-4 text-lg text-slate-100 sm:text-xl">
+                  “{highlight.quote}”
+                </p>
+                <div className="mt-6 flex items-center gap-3">
+                  <div className="relative h-12 w-12 overflow-hidden rounded-full border border-slate-700/60">
+                    <Image
+                      src={highlight.image}
+                      alt={`${highlight.name} avatar`}
+                      width={48}
+                      height={48}
+                      className="h-full w-full object-cover"
+                      priority={false}
+                    />
+                  </div>
+                  <div>
+                    <div className="text-sm font-semibold text-white">{highlight.name}</div>
+                    <div className="text-xs text-slate-300">{highlight.role}</div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="relative overflow-hidden border-b border-slate-800/40 bg-slate-900/40">
+        <div className="absolute -left-20 top-10 -z-10 h-72 w-72 rounded-full bg-[radial-gradient(circle,_rgba(139,92,246,0.25),_rgba(15,23,42,0))]"></div>
+        <div className="mx-auto grid max-w-5xl gap-12 px-6 py-24 lg:grid-cols-[0.65fr,0.35fr]">
+          <div className="space-y-8">
+            <span className="inline-flex items-center gap-2 rounded-full border border-slate-700/60 bg-slate-950/60 px-4 py-2 text-xs font-semibold uppercase tracking-[0.25em] text-slate-300">
+              Journey
             </span>
-            .
-          </h1>
-          <div className="mt-7 md:mt-14">
-            <p ref={subtitleRef} className="lg:text-[25px] xlg:text-[25px] lg:max-w-[780px] xlg:max-w-[850px] m-auto text-gray-300 leading-relaxed">
-              I engage in the art of creation, a visionary who believes in the
-              power of building visionary products. See you on Mars 🚀...
+            <h2 className="text-3xl font-semibold text-white sm:text-4xl">
+              Elevating achievements, embark on a journey.
+            </h2>
+            <p className="text-lg text-slate-300 sm:text-xl">
+              Back in fourth grade, the magic happened—I got my hands on my first computer! The whole neighborhood buzzed with curiosity as the computer engineer was setting up the PC right at my home.
             </p>
+            <p className="text-lg text-slate-300 sm:text-xl">
+              I studied BCA and MCA in Computer Science and worked as a full-stack and front-end developer. I&apos;ve put my skills to the test on over a hundred projects, juggling both freelancing gigs and company projects.
+            </p>
+            <ul className="space-y-3 text-base text-slate-300">
+              {storyBullets.map((bullet) => (
+                <li key={bullet} className="flex gap-3">
+                  <span className="mt-1 inline-flex h-2.5 w-2.5 flex-none rounded-full bg-accent"></span>
+                  <span>{bullet}</span>
+                </li>
+              ))}
+            </ul>
+            <div>
+              <Link
+                href="/learn"
+                className="inline-flex items-center gap-2 rounded-full border border-slate-700/60 px-5 py-3 text-sm font-semibold text-slate-200 transition hover:border-secondary/60 hover:text-white"
+              >
+                Explore learnings
+                <span aria-hidden>↗</span>
+              </Link>
+            </div>
           </div>
-          <div className="bg-gradient-to-r from-gray-800/50 to-gray-700/50 backdrop-blur-sm border border-gray-600/30 p-5 mt-7 md:mt-14 lg:max-w-[700px] xlg:max-w-[800px] m-auto rounded-xl shadow-xl">
-            <div ref={statsRef} className="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
-              <div className="gradient-card">
-                <div className="text-5xl font-bold bg-gradient-to-r from-accent to-secondary bg-clip-text text-transparent">100+</div>
-                <div className="text-1xl font-medium pt-3 text-gray-300">Total Projects</div>
+          <div className="space-y-6">
+            <div className="rounded-3xl border border-slate-800/60 bg-slate-950/70 p-8 shadow-xl shadow-black/30">
+              <p className="text-lg text-slate-100">
+                “The journey hasn&apos;t been a walk in the park, and even today, it throws new challenges my way. I studied BCA and MCA in Computer Science and worked as a full-stack and front-end developer.”
+              </p>
+              <div className="mt-6 flex items-center gap-3">
+                <div className="h-12 w-12 overflow-hidden rounded-full border border-slate-700/60">
+                  <Image
+                    src={heroPortrait}
+                    alt="Rajneesh Raj portrait"
+                    width={48}
+                    height={48}
+                    className="h-full w-full object-cover"
+                  />
+                </div>
+                <div>
+                  <div className="text-sm font-semibold text-white">Rajneesh Raj</div>
+                  <div className="text-xs text-slate-300">Founder, Grapdevs</div>
+                </div>
               </div>
-              <div className="gradient-card">
-                <div className="text-5xl font-bold bg-gradient-to-r from-secondary to-tertiary bg-clip-text text-transparent">40+</div>
-                <div className="text-1xl font-medium pt-3 text-gray-300">Total Clients</div>
-              </div>
-              <div className="gradient-card">
-                <div className="text-5xl font-bold bg-gradient-to-r from-tertiary to-accent bg-clip-text text-transparent">3</div>
-                <div className="text-1xl font-medium pt-3 text-gray-300">Open Sources</div>
-              </div>
-              <div className="gradient-card">
-                <div className="text-5xl font-bold bg-gradient-to-r from-accent to-tertiary bg-clip-text text-transparent">3</div>
-                <div className="text-1xl font-medium pt-3 text-gray-300">Own Projects</div>
-              </div>
+            </div>
+            <div className="rounded-3xl border border-slate-800/60 bg-gradient-to-r from-accent/10 via-slate-900/60 to-secondary/10 p-6 text-sm text-slate-100 shadow-lg shadow-black/30">
+              And hey, now I&apos;m steering my own ship at
+              <Link
+                href="https://grapdevs.com"
+                className="ml-2 inline-flex items-center gap-1 text-accent underline-offset-4 hover:text-secondary"
+              >
+                Grapdevs.com
+                <span aria-hidden>↗</span>
+              </Link>
+              .
             </div>
           </div>
         </div>
-      </div>
-      <DigitalMarvels />
+      </section>
 
-      <div
-        id="starthere"
-        className="container m-auto pt-[100px] bg-gradient-to-b from-gray-900 to-gray-800 z-[99] relative"
-      >
-        <div className="">
-          <WeDeliver />
+      <section className="relative overflow-hidden border-b border-slate-800/40 bg-slate-950">
+        <div className="absolute inset-x-0 top-0 -z-10 h-40 bg-[radial-gradient(circle,_rgba(6,182,212,0.2),_rgba(15,23,42,0))]"></div>
+        <div className="mx-auto max-w-6xl px-6 py-24">
+          <div className="mx-auto max-w-3xl text-center">
+            <span className="inline-flex items-center justify-center gap-2 rounded-full border border-slate-700/60 bg-slate-900/60 px-4 py-2 text-xs font-semibold uppercase tracking-[0.25em] text-slate-300">
+              Crafted Creations
+            </span>
+            <h2 className="mt-6 text-3xl font-semibold text-white sm:text-4xl">
+              Crafted Creations: My Unique Project Achievements
+            </h2>
+            <p className="mt-4 text-lg text-slate-300">
+              From virtual learning environments to IoT dashboards and streaming platforms, I partner with founders to craft the products they imagine.
+            </p>
+          </div>
+          <div className="mt-16 grid gap-8 lg:grid-cols-3">
+            {projectHighlights.map((project) => (
+              <div
+                key={project.id}
+                className={`relative flex h-full flex-col overflow-hidden rounded-3xl border ${project.accent} p-8 shadow-xl shadow-black/30 backdrop-blur`}
+              >
+                <div className="text-sm font-semibold text-slate-300">{project.id}</div>
+                <h3 className="mt-3 text-2xl font-semibold text-white">{project.title}</h3>
+                <p className="mt-4 text-base text-slate-300">{project.description}</p>
+                <div className="mt-6 text-sm font-medium text-slate-200">{project.meta}</div>
+              </div>
+            ))}
+          </div>
+          <div className="mt-12 flex justify-center">
+            <Link
+              href="/projects"
+              className="inline-flex items-center gap-2 rounded-full border border-slate-700/60 px-6 py-3 text-sm font-semibold text-slate-200 transition hover:border-tertiary/60 hover:text-white"
+            >
+              Browse all projects
+              <span aria-hidden>→</span>
+            </Link>
+          </div>
         </div>
-      </div>
+      </section>
 
-      <div>
-        <MoreAchiev  />
+      <div className="bg-slate-950">
+        <Technology />
       </div>
-      {/* <div className="bg-gray-200  z-[99] relative "> <Achievments /></div> */}
-
-      <Technology />
-      <HomeWriting />
-      <div className="">
+      <div className="bg-slate-950">
+        <HomeWriting />
+      </div>
+      <div className="bg-slate-950">
         <HomeLearn />
       </div>
-      <div className="relative z-[99] pt-[80px] md:pt-[150px] bg-gradient-to-b from-gray-800 to-gray-900 border-b-2 border-gray-700/30 pb-[80px] md:pb-[150px]">
+      <div className="bg-slate-950 py-20">
         <CompaniesIhaveWorked />
       </div>
     </main>
   );
 }
+
