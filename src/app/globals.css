@@ -13,14 +13,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-    135deg,
-    #0f172a 0%,
-    #1e293b 25%,
-    #334155 50%,
-    #475569 75%,
-    #64748b 100%
-  );
+  background: #050607;
   min-height: 100vh;
 }
 
@@ -61,14 +54,7 @@ html, body {
 }
 
 html,body{
-  background: linear-gradient(
-    135deg,
-    #0f172a 0%,
-    #1e293b 25%,
-    #334155 50%,
-    #475569 75%,
-    #64748b 100%
-  ) !important;
+  background: #050607 !important;
   color: #f8fafc;
 }
 
