@@ -83,12 +83,12 @@ export default function Newsletter() {
   if (subscribed) {
     return (
       <div className="w-full bg-transparent text-white pt-[100px] pb-[100px]">
-        <div className=" p-5 m-auto bg-transparent text-center">
-          <h2 className="text-4xl font-medium">😊 Cool! You are Already Subscribed</h2>
-          <p className="mt-2">You&apos;re signed up with the email address: {subscribedEmail}</p>
-          <p className="text-gray-200 text-[14px] pt-2">
+        <div className="mx-auto max-w-[720px] rounded-[32px] border border-white/30 bg-white/10 p-8 text-center shadow-2xl backdrop-blur">
+          <h2 className="text-4xl font-semibold">😊 Cool! You are Already Subscribed</h2>
+          <p className="mt-3 text-base text-white/80">You&apos;re signed up with the email address: {subscribedEmail}</p>
+          <p className="pt-4 text-sm text-white/70">
             If you find this as a mistake:{" "}
-            <span className="text-300 underline " onClick={handleUpdateEmail}>Update Email</span>
+            <span className="cursor-pointer text-white underline" onClick={handleUpdateEmail}>Update Email</span>
           </p>
         </div>
       </div>
@@ -97,9 +97,10 @@ export default function Newsletter() {
 
   if (subscriptionSuccess) {
     return (
-      <div className="w-full  text-white pt-[100px] pb-[100px]">
-        <div className=" p-5 m-auto text-center">
-          <h2 className="text-4xl font-medium">Thank you for subscribing!</h2>
+      <div className="w-full text-white pt-[100px] pb-[100px]">
+        <div className="mx-auto max-w-[720px] rounded-[32px] border border-white/30 bg-white/10 p-8 text-center shadow-2xl backdrop-blur">
+          <h2 className="text-4xl font-semibold">Thank you for subscribing!</h2>
+          <p className="mt-3 text-base text-white/80">Expect fresh updates and insights in your inbox soon.</p>
         </div>
       </div>
     );
@@ -107,16 +108,15 @@ export default function Newsletter() {
 
   return (
     <div className="w-full text-white pt-[100px] pb-[100px]">
-      <div className=" p-5 m-auto text-center">
-        <h2 className="text-4xl font-medium">Join my newsletter</h2>
-        <p className="text-[18px] max-w-[700px] m-auto mt-5">
-          By joining my newsletter, you&apos;ll receive updates on the latest
-          technology news and have the opportunity to learn more about coding.
+      <div className="mx-auto max-w-[720px] rounded-[32px] border border-white/30 bg-white/10 p-8 text-center shadow-2xl backdrop-blur">
+        <h2 className="text-4xl font-semibold">Join my newsletter</h2>
+        <p className="mt-5 text-base text-white/80">
+          By joining my newsletter, you&apos;ll receive updates on the latest technology news and have the opportunity to learn more about coding.
         </p>
-        <div className="md:join mt-10">
+        <div className="mt-10 flex flex-col items-center justify-center gap-4 md:flex-row">
           <input
             type="text"
-            className="input join-item w-full md:w-[300px] text-siteDefaultColor bg-white border border-gray-400"
+            className="w-full rounded-full border border-white/40 bg-white/90 px-6 py-3 text-base text-slate-900 placeholder:text-slate-400 focus:border-siteDefaultColor/70 focus:outline-none focus:ring-2 focus:ring-siteDefaultColor/50 md:w-[320px]"
             aria-labelledby="subscribe write your email"
             placeholder="Your Email"
             value={email}
@@ -124,7 +124,7 @@ export default function Newsletter() {
           />
           <button
             type="button"
-            className="btn bg-siteDefaultColor text-white join-item mt-5 md:mt-0 w-full md:w-auto"
+            className="inline-flex w-full items-center justify-center rounded-full bg-gradient-to-r from-siteDefaultColor to-[#0aa0a4] px-8 py-3 text-base font-semibold text-white shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:shadow-2xl md:w-auto"
             onClick={subscribeNewsletter}
             disabled={loading}
           >

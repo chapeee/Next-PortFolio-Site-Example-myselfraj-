@@ -5,14 +5,14 @@ import { usePathname } from "next/navigation";
 export default function RouterLinks() {
   return (
     <div>
-      <ul className="font-medium text-[18px] flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-100 lg:flex-row lg:space-x-8 rtl:space-x-reverse lg:mt-0 md:border-0 bg-transparent  ">
+      <ul className="font-medium text-[18px] flex flex-col gap-2 p-4 md:p-0 mt-4 rounded-2xl bg-white/90 shadow-lg lg:flex-row lg:items-center lg:gap-6 rtl:space-x-reverse lg:mt-0 lg:bg-transparent lg:shadow-none">
         <li>
           <a
             href="/about"
-            className={`block py-2 px-3 text-gray-700 hover:bg-gray-100  border-b-2 hover:border-siteDefaultColor hover:text-siteDefaultColor ${
+            className={`block px-4 py-2 rounded-full transition-all duration-200 ${
               IsLinkActive("/about")
-                ? " border-[#09757a]  font-bold text-siteDefaultColor"
-                : "border-transparent "
+                ? "bg-white text-siteDefaultColor shadow-sm"
+                : "text-slate-600 hover:text-siteDefaultColor hover:bg-white/70"
             }`}
           >
             About Me
@@ -21,10 +21,10 @@ export default function RouterLinks() {
         <li>
           <a
             href="/learn"
-            className={`block py-2 px-3 text-gray-700 hover:bg-gray-100  border-b-2 hover:border-siteDefaultColor hover:text-siteDefaultColor ${
+            className={`block px-4 py-2 rounded-full transition-all duration-200 ${
               IsLinkActive("/learn")
-                ? " border-[#09757a] font-bold text-siteDefaultColor"
-                : "border-transparent "
+                ? "bg-white text-siteDefaultColor shadow-sm"
+                : "text-slate-600 hover:text-siteDefaultColor hover:bg-white/70"
             }`}
           >
             Learn
@@ -33,10 +33,10 @@ export default function RouterLinks() {
         <li>
           <a
             href="/projects"
-            className={`block py-2 px-3 text-gray-700  hover:bg-gray-100  border-b-2 hover:border-siteDefaultColor hover:text-siteDefaultColor ${
+            className={`block px-4 py-2 rounded-full transition-all duration-200 ${
               IsLinkActive("/projects")
-                ? " border-[#09757a] font-bold text-siteDefaultColor"
-                : "border-transparent"
+                ? "bg-white text-siteDefaultColor shadow-sm"
+                : "text-slate-600 hover:text-siteDefaultColor hover:bg-white/70"
             }`}
           >
             Projects
@@ -45,10 +45,10 @@ export default function RouterLinks() {
         <li>
           <a
             href="/blog"
-            className={`block py-2 px-3 text-gray-700  hover:bg-gray-100  border-b-2 hover:border-siteDefaultColor hover:text-siteDefaultColor ${
+            className={`block px-4 py-2 rounded-full transition-all duration-200 ${
               IsLinkActive("/blog")
-                ? " border-[#09757a] font-bold text-siteDefaultColor"
-                : "border-transparent"
+                ? "bg-white text-siteDefaultColor shadow-sm"
+                : "text-slate-600 hover:text-siteDefaultColor hover:bg-white/70"
             }`}
           >
             My Writings
@@ -58,10 +58,10 @@ export default function RouterLinks() {
         <li>
           <a
             href="/dictionary"
-            className={`block py-2 px-3 text-gray-700  hover:bg-gray-100  border-b-2 hover:border-siteDefaultColor hover:text-siteDefaultColor ${
+            className={`block px-4 py-2 rounded-full transition-all duration-200 ${
               IsLinkActive("/dictionary")
-                ? " border-[#09757a] font-bold text-siteDefaultColor"
-                : "border-transparent"
+                ? "bg-white text-siteDefaultColor shadow-sm"
+                : "text-slate-600 hover:text-siteDefaultColor hover:bg-white/70"
             }`}
           >
          Code Dictionary
@@ -72,7 +72,7 @@ export default function RouterLinks() {
           <a
             target="blank"
             href="https://calendly.com/myselfraj/30min"
-            className="block py-2 px-3  text-white bg-siteDefaultColor rounded-full pl-4 pr-4 border border-b-1 hover:border hover:border-b-1 hover:border-siteDefaultColor hover:bg-white hover:text-siteDefaultColor"
+            className="block px-5 py-2 text-white bg-gradient-to-r from-siteDefaultColor to-[#0aa0a4] rounded-full border border-transparent shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
           >
             Lets Chat
           </a>

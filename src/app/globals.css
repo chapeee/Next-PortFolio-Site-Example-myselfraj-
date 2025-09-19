@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --foreground-rgb: 15, 23, 42;
+  --background-start-rgb: 248, 250, 252;
+  --background-end-rgb: 238, 242, 245;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,12 +18,23 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
+  background:
+    radial-gradient(circle at 20% 20%, rgba(9, 117, 122, 0.12), transparent 55%),
+    radial-gradient(circle at 80% 0%, rgba(9, 117, 122, 0.12), transparent 55%),
+    linear-gradient(
       to bottom,
-      transparent,
+      rgb(var(--background-start-rgb)),
       rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    );
+  background-attachment: fixed;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+::selection {
+  background: rgba(9, 117, 122, 0.25);
+  color: rgb(var(--foreground-rgb));
 }
 
 @layer utilities {
@@ -39,7 +50,7 @@ html, body {
 /* Firefox */
 *{
   scrollbar-width: thin;
-  scrollbar-color: #000000 #FFFFFF;
+  scrollbar-color: #0f172a #e2e8f0;
 }
 
 /* Other browsers */
@@ -48,16 +59,16 @@ html, body {
 }
 
 *::-webkit-scrollbar-track{
-  background: #FFFFFF;
+  background: #e2e8f0;
 }
 
 *::-webkit-scrollbar-thumb{
-  background-color: #000000;
-  border-radius: 0px;
-  border: 3px solid #FFFFFF;
+  background-color: #0f172a;
+  border-radius: 9999px;
+  border: 3px solid #e2e8f0;
 }
 html,body{
-  background: #f3f4f7 !important;
+  background: #eef2f5 !important;
 }
 .code-snipit pre{
   background: rgb(212 228 229) !important;

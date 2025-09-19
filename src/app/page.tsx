@@ -11,40 +11,55 @@ import Achievments from "./Components/Achievments";
 export default function Home() {
 
   return (
-    <main className="w-100 bg-gray-100 text-black" id="">
-      <div className="w-full lg:min-h-[100vh] xl:min-h-[1000px] lg:sticky lg:pb-[150px] pb-[70px] lg:top-[150px] z-0">
-        <div className="container p-5 pt-[70px] md:pt-[90px] m-auto text-center relative">
-          <div className="badge bg-siteDefaultColor text-white p-3 pl-4 pr-4 mb-5 text-[16px]">Building &nbsp;<a href="grapdevs.com"> Grapdevs</a></div>
-          <h1 className="text-[60px] sm:text-[64px] md:text-7xl lg:text-[86px] xlg:text-8xl leading-[120%]">
-            Hi! I am <u>Rajneesh</u> AKA
-            <span className="text-siteDefaultColor font-bold mt-10 rounded-lg ml-4 pl-3 pr-3">
-              Raj
-            </span>
-            .
-          </h1>
-          <div className="mt-7 md:mt-14">
-            <p className="lg:text-[25px] xlg:text-[25px] lg:max-w-[780px] xlg:max-w-[850px] m-auto ">
-              I engage in the art of creation, a visionary who believes in the
-              power of building visionay products. See you on Mars 🚀...
-            </p>
+    <main className="w-full text-slate-900" id="">
+      <div className="relative w-full lg:min-h-[100vh] xl:min-h-[1000px] lg:sticky lg:pb-[150px] pb-[70px] lg:top-[150px] z-0">
+        <div className="container relative mx-auto px-6 pt-[70px] md:pt-[100px] pb-[70px] md:pb-[100px] text-center">
+          <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
+            <div className="absolute left-1/2 top-[-180px] h-[420px] w-[420px] -translate-x-1/2 rounded-full bg-siteDefaultColor/20 blur-3xl" />
+            <div className="absolute right-[10%] top-[30%] h-[260px] w-[260px] rounded-full bg-white/60 blur-3xl" />
+            <div className="absolute left-[8%] bottom-[-140px] h-[300px] w-[300px] rounded-full bg-[#86e3e4]/30 blur-3xl" />
           </div>
-          <div className="bg-gray-50 p-5 mt-7 md:mt-14 lg:max-w-[700px] xlg:max-w-[800px] m-auto">
-            <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
-              <div>
-                <div className="text-5xl">100+</div>
-                <div className="text-1xl font-medium pt-3">Total Projects</div>
-              </div>
-              <div>
-                <div className="text-5xl">40+</div>
-                <div className="text-1xl font-medium pt-3">Total Clients</div>
-              </div>
-              <div>
-                <div className="text-5xl">3</div>
-                <div className="text-1xl font-medium pt-3">Open Sources</div>
-              </div>
-              <div>
-                <div className="text-5xl">3</div>
-                <div className="text-1xl font-medium pt-3">Own Projects</div>
+          <div className="mx-auto max-w-4xl rounded-3xl border border-white/60 bg-white/80 p-8 shadow-2xl backdrop-blur-3xl md:p-12">
+            <div className="inline-flex items-center gap-2 rounded-full border border-siteDefaultColor/30 bg-siteDefaultColor/10 px-5 py-2 text-sm font-semibold uppercase tracking-[0.35em] text-siteDefaultColor shadow-sm">
+              Building
+              <a
+                href="grapdevs.com"
+                className="inline-flex items-center gap-1 underline decoration-siteDefaultColor/40 decoration-2 underline-offset-4"
+              >
+                Grapdevs
+              </a>
+            </div>
+            <h1 className="mt-8 text-balance text-4xl sm:text-5xl md:text-6xl lg:text-[76px] font-semibold leading-[1.05] tracking-tight">
+              Hi! I am <span className="border-b-4 border-siteDefaultColor/40 pb-2">Rajneesh</span> AKA
+              <span className="ml-3 inline-flex items-center rounded-full bg-gradient-to-r from-siteDefaultColor to-[#0aa0a4] px-5 py-1.5 text-2xl font-bold text-white shadow-lg md:text-3xl">
+                Raj
+              </span>
+              .
+            </h1>
+            <div className="mt-7 md:mt-10">
+              <p className="mx-auto max-w-[780px] text-lg leading-relaxed text-slate-600 md:text-xl">
+                I engage in the art of creation, a visionary who believes in the
+                power of building visionary products. See you on Mars 🚀...
+              </p>
+            </div>
+            <div className="mt-10 rounded-3xl border border-white/70 bg-white/80 p-6 shadow-lg">
+              <div className="grid gap-5 sm:grid-cols-2 md:grid-cols-4">
+                <div className="rounded-2xl border border-slate-200/70 bg-white/90 px-6 py-5 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md">
+                  <div className="text-4xl font-semibold text-slate-900 md:text-5xl">100+</div>
+                  <div className="pt-3 text-xs font-medium uppercase tracking-[0.35em] text-slate-500">Total Projects</div>
+                </div>
+                <div className="rounded-2xl border border-slate-200/70 bg-white/90 px-6 py-5 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md">
+                  <div className="text-4xl font-semibold text-slate-900 md:text-5xl">40+</div>
+                  <div className="pt-3 text-xs font-medium uppercase tracking-[0.35em] text-slate-500">Total Clients</div>
+                </div>
+                <div className="rounded-2xl border border-slate-200/70 bg-white/90 px-6 py-5 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md">
+                  <div className="text-4xl font-semibold text-slate-900 md:text-5xl">3</div>
+                  <div className="pt-3 text-xs font-medium uppercase tracking-[0.35em] text-slate-500">Open Sources</div>
+                </div>
+                <div className="rounded-2xl border border-slate-200/70 bg-white/90 px-6 py-5 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md">
+                  <div className="text-4xl font-semibold text-slate-900 md:text-5xl">3</div>
+                  <div className="pt-3 text-xs font-medium uppercase tracking-[0.35em] text-slate-500">Own Projects</div>
+                </div>
               </div>
             </div>
           </div>
@@ -54,7 +69,7 @@ export default function Home() {
 
       <div
         id="starthere"
-        className="container m-auto pt-[100px] bg-gray-100 z-[99] relative "
+        className="container relative z-[99] m-auto pt-[100px]"
       >
         <div className="">
           <WeDeliver />

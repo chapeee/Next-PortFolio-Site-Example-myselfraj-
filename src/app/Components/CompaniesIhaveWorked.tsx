@@ -4,87 +4,46 @@ import React from 'react'
 export default function CompaniesIhaveWorked() {
   return (
     <div>
-         <div className="container m-auto text-black text-center ">
-          <h2 className="text-4xl  mb-14 md:text-6xl">
-            Companies I have worked with
-          </h2>
-          <div className="flex p-5 flex-wrap md:gap-6 gap-4 text-[18px] max-w-[950px] m-auto text-gray-600 font-medium">
-            {" "}
-           
-
-            <div className="border boder-1 border-gray-300 bg-gray-100 rounded-full pl-5 pr-5 p-2  ">
-              Jeff.co
+         <div className="container m-auto text-center">
+          <div className="rounded-[32px] border border-white/70 bg-white/80 p-10 shadow-2xl backdrop-blur">
+            <h2 className="text-balance text-4xl md:text-5xl font-semibold text-slate-900 mb-10">
+              Companies I have worked with
+            </h2>
+            <div className="flex flex-wrap justify-center gap-4 md:gap-6 text-[16px] font-semibold text-slate-600">
+              {[
+                "Jeff.co",
+                "Karat.io",
+                "Mithi.com",
+                "Petofy",
+                "Cynotech",
+                "Fusioni Tech",
+                "Rosewood Publications",
+                "Choreless",
+                "Mithi",
+                "Marketing Crawlers",
+                "PRM Digital",
+                "TrueDreamster Publications",
+                "LegacyFlow",
+                "Wibyng",
+                "Kapiva",
+                "Fm1",
+                "Dreamershelf Publications",
+                "The Fold",
+                "Wapka",
+                "Educrafter Education",
+                "Rayforce Greentech",
+                "HaitinFlix",
+                "Motosports",
+                "JFlex",
+              ].map((company) => (
+                <span
+                  key={company}
+                  className="rounded-full border border-slate-200/70 bg-white/80 px-5 py-2 text-sm uppercase tracking-[0.2em] shadow-sm"
+                >
+                  {company}
+                </span>
+              ))}
             </div>
-            <div className="border boder-1 border-gray-300 bg-gray-100 rounded-full pl-5 pr-5 p-2 ">
-              Karat.io
-            </div>
-            <div className="border boder-1 border-gray-300 bg-gray-100 rounded-full pl-5 pr-5 p-2 ">
-              Mithi.com
-            </div>
-            <div className="border boder-1 border-gray-300 bg-gray-100 rounded-full pl-5 pr-5 p-2 ">
-              Petofy
-            </div>
-            <div className="border boder-1 border-gray-300 bg-gray-100 rounded-full pl-5 pr-5 p-2 ">
-              Cynotech
-            </div>
-            <div className="border boder-1 border-gray-300 bg-gray-100 rounded-full pl-5 pr-5 p-2 ">
-              Fusioni Tech
-            </div>
-            <div className="border boder-1 border-gray-300 bg-gray-100 rounded-full pl-5 pr-5  p-2">
-              Rosewood Publications
-            </div>
-            <div className="border boder-1 border-gray-300 bg-gray-100 rounded-full pl-5 pr-5  p-2">
-              Choreless
-            </div>
-            <div className="border boder-1 border-gray-300 rounded-full pl-5 pr-5 p-2 ">
-              Mithi
-            </div>
-            <div className="border boder-1 border-gray-300 rounded-full pl-5 pr-5 p-2 ">
-              Marketing Crawlers
-            </div>
-            <div className="border boder-1 border-gray-300 bg-gray-100 rounded-full pl-5 pr-5  p-2 ">
-              PRM Digital
-            </div>
-            <div className="border boder-1 border-gray-300 bg-gray-100 rounded-full pl-5 pr-5  p-2">
-              TrueDreamster Publications
-            </div>
-            <div className="border boder-1 border-gray-300 rounded-full pl-5 pr-5 p-2 ">
-              LegacyFlow
-            </div>
-            <div className="border boder-1 border-gray-300 rounded-full pl-5 pr-5 p-2 ">
-              Wibyng
-            </div>
-            <div className="border boder-1 border-gray-300 rounded-full pl-5 pr-5 p-2 ">
-              Kapiva
-            </div>
-            <div className="border boder-1 border-gray-300 rounded-full pl-5 pr-5 p-2 ">
-              Fm1
-            </div>
-            <div className="border boder-1 border-gray-300 rounded-full pl-5 pr-5  p-2">
-              Dreamershelf Publications
-            </div>
-            <div className="border boder-1 border-gray-300 rounded-full pl-5 pr-5  p-2">
-              The Fold
-            </div>
-            <div className="border boder-1 border-gray-300 rounded-full pl-5 pr-5  p-2">
-              Wapka
-            </div>
-            <div className="border boder-1 border-gray-300 bg-gray-100 rounded-full pl-5 pr-5 p-2 ">
-              Educrafter Education
-            </div>
-            <div className="border boder-1 border-gray-300 rounded-full pl-5 pr-5 p-2 ">
-              Rayforce Greentech
-            </div>
-            <div className="border boder-1 border-gray-300 rounded-full pl-5 pr-5 p-2 ">
-              HaitinFlix
-            </div>
-            <div className="border boder-1 border-gray-300 rounded-full pl-5 pr-5 p-2 ">
-              Motosports
-            </div>
-            <div className="border boder-1 border-gray-300 rounded-full pl-5 pr-5 p-2 ">
-              JFlex
-            </div>
-           
           </div>
         </div>
     </div>
