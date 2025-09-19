@@ -5,7 +5,7 @@ import AOS from "aos";
 export default function MoreAchiev() {
   return (
     <div>
-      <div className="p-[50px] bg-gray-100 relative  z-[9]"></div>
+      <div className="p-[50px] bg-gradient-to-b from-transparent via-[#eef2f5] to-[#e4ebf5] relative  z-[9]"></div>
       <div className="sticky top-0 z-0">
         <div className="relative min-h-[100vh] flex justify-center items-center z-[9999] overflow-hidden">
           <video
@@ -21,11 +21,10 @@ export default function MoreAchiev() {
             Your browser does not support the video tag.
           </video>
 
-          <div className="absolute inset-0 bg-black bg-opacity-80 text-white flex flex-col items-center justify-center">
-            <div className="container mx-auto p-5">
+          <div className="absolute inset-0 bg-gradient-to-br from-slate-950/85 via-slate-900/80 to-slate-900/75 backdrop-blur-[2px] text-white flex flex-col items-center justify-center">
+            <div className="container mx-auto px-6">
               <div
-                className="text-[48px] sm:-[58px] lg:text-8xl lg:text-8xl font-medium text-center"
-                style={{ lineHeight: "120%" }}
+                className="text-balance text-4xl sm:text-5xl lg:text-7xl font-semibold text-center leading-[1.1] drop-shadow-xl"
                 data-aos="zoom-in"
                 data-aos-once="true"
                 data-aos-delay="50"
@@ -36,7 +35,7 @@ export default function MoreAchiev() {
               <div className="w-full flex justify-center items-center mt-14 pt-14">
                 <a
                   href="/projects"
-                  className="hover:cursor-pointer rounded-full bg-siteDefaultColor text-white h-[170px] w-[170px]  flex items-center justify-center text-[28px] text-center font-medium"
+                  className="flex h-[170px] w-[170px] items-center justify-center rounded-full bg-gradient-to-r from-siteDefaultColor to-[#0aa0a4] text-center text-[28px] font-semibold text-white shadow-2xl transition-transform duration-300 hover:-translate-y-1 hover:shadow-[0_25px_60px_rgba(0,0,0,0.35)]"
                 >
                   View all Projects
                 </a>

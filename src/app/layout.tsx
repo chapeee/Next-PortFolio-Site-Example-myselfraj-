@@ -17,14 +17,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="bg-gray-100">
-      <body className={inter.className}>
-      <NextTopLoader color="#09757a"  crawl={true} />
+    <html lang="en" className="bg-[#eef2f5]">
+      <body
+        className={`${inter.className} bg-gradient-to-b from-[#f8fafc] via-[#f1f5f9] to-[#eef2f5] text-slate-900 antialiased`}
+      >
+        <NextTopLoader color="#09757a" crawl={true} />
         <Header />
 
         {children}
-       
-       
+
         <Footer />
       </body>
     </html>
