@@ -3,61 +3,89 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 
 export default function WeDeliver() {
+  const [opacityBug, setOpacityBug] = useState(1);
   const [opacityvle, setOpacityvle] = useState(1);
   const [opacitywater, setOpacitywater] = useState(0.3);
   const [opacitytvapp, setOpacitytvapp] = useState(0.3);
 
   useEffect(() => {
-    const leftImage = document.getElementById("leftImage") as HTMLImageElement;
+    const leftContainer = document.getElementById("leftMediaContainer") as HTMLDivElement;
+    const leftStickyImage = document.getElementById("leftStickyImage") as HTMLImageElement;
+    const leftVideo = document.getElementById("leftVideo") as HTMLVideoElement;
+
+    const bugHeading = document.getElementById("bugspoon");
     const vleHeading = document.getElementById("vle");
     const waterHeading = document.getElementById("water");
     const tvappHeading = document.getElementById("tvapp");
 
     const isInView = (element: any) => {
       const rect = element.getBoundingClientRect();
-      const middleOfImage =
-        leftImage.getBoundingClientRect().top +
-        leftImage.getBoundingClientRect().height / 2;
+      const viewerRect = leftContainer.getBoundingClientRect();
+      const middleOfViewer = viewerRect.top + viewerRect.height / 2;
+      return rect.top <= middleOfViewer && rect.bottom >= middleOfViewer;
+    };
 
-      return rect.top <= middleOfImage && rect.bottom >= middleOfImage;
+    const showVideo = () => {
+      if (leftVideo) {
+        leftVideo.style.display = "block";
+        leftVideo.muted = true;
+        leftVideo.loop = true;
+        leftVideo.autoplay = true as any;
+        leftVideo.play().catch(() => {});
+      }
+      if (leftStickyImage) {
+        leftStickyImage.style.display = "none";
+      }
+    };
+
+    const showImage = (src: string) => {
+      if (leftStickyImage) {
+        leftStickyImage.src = src;
+        leftStickyImage.style.display = "block";
+      }
+      if (leftVideo) {
+        leftVideo.style.display = "none";
+        leftVideo.pause();
+      }
     };
 
     const handleScroll = () => {
       if (window.innerWidth <= 767) {
+        setOpacityBug(1);
         setOpacityvle(1);
         setOpacitywater(1);
         setOpacitytvapp(1);
-        return true;
+        return;
       }
-      if (isInView(vleHeading)) {
-        if (leftImage) {
-          leftImage.src =
-            "https://ik.imagekit.io/mq90sdk8y/myselfraj/acri.png?updatedAt=17069618344912";
-          setOpacityvle(1);
-          setOpacitywater(0.3);
-          setOpacitytvapp(0.3);
-        }
-      } else if (isInView(waterHeading)) {
-        if (leftImage) {
-          leftImage.src =
-            "https://ik.imagekit.io/mq90sdk8y/myselfraj/water-har.png?updatedAt=1707019559105";
-          setOpacityvle(0.3);
-          setOpacitywater(1);
-          setOpacitytvapp(0.3);
-        }
-      } else if (isInView(tvappHeading)) {
-        if (leftImage) {
-          leftImage.src =
-            "https://ik.imagekit.io/mq90sdk8y/myselfraj/tr:q:70,w-600/tvapp.png?updatedAt=1707019951457";
-          setOpacityvle(0.3);
-          setOpacitywater(0.3);
-          setOpacitytvapp(1);
-        }
+
+      if (bugHeading && isInView(bugHeading)) {
+        showVideo();
+        setOpacityBug(1);
+        setOpacityvle(0.3);
+        setOpacitywater(0.3);
+        setOpacitytvapp(0.3);
+      } else if (vleHeading && isInView(vleHeading)) {
+        showImage("https://ik.imagekit.io/mq90sdk8y/myselfraj/acri.png?updatedAt=17069618344912");
+        setOpacityBug(0.3);
+        setOpacityvle(1);
+        setOpacitywater(0.3);
+        setOpacitytvapp(0.3);
+      } else if (waterHeading && isInView(waterHeading)) {
+        showImage("https://ik.imagekit.io/mq90sdk8y/myselfraj/water-har.png?updatedAt=1707019559105");
+        setOpacityBug(0.3);
+        setOpacityvle(0.3);
+        setOpacitywater(1);
+        setOpacitytvapp(0.3);
+      } else if (tvappHeading && isInView(tvappHeading)) {
+        showImage("https://ik.imagekit.io/mq90sdk8y/myselfraj/tr:q:70,w-600/tvapp.png?updatedAt=1707019951457");
+        setOpacityBug(0.3);
+        setOpacityvle(0.3);
+        setOpacitywater(0.3);
+        setOpacitytvapp(1);
       }
     };
 
     window.addEventListener("scroll", handleScroll);
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -73,9 +101,7 @@ export default function WeDeliver() {
                 Crafted Creations:{" "}
               </span>
               <br />
-              <div className="mt-4 text-3xlf">
-                My Unique Project Achievements
-              </div>
+              <div className="mt-4 text-3xlf">My Unique Project Achievements</div>
             </h2>
             <div className="mb-8 mt-5 underline">
               {" "}
@@ -85,24 +111,96 @@ export default function WeDeliver() {
             </div>
 
             <div className="mockup-window border border-gray-600 hidden md:block">
-              <Image
-                id="leftImage"
-                src="https://ik.imagekit.io/mq90sdk8y/myselfraj/acri.png?updatedAt=17069618344912"
-                alt="Deliver quality applications with Grapdevs Technologies"
-                width={0}
-                sizes="100vw"
-                height={300}
-                style={{
-                  width: "100%",
-                  height: "100%",
-                  objectFit: "contain",
-                  borderRadius: "8px",
-                }}
-                loading="lazy"
-              />
+              <div id="leftMediaContainer" className="relative w-full h-full">
+                <video
+                  id="leftVideo"
+                  src="/bugspoon.mp4"
+                  muted
+                  autoPlay
+                  playsInline
+                  loop
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "contain",
+                    borderRadius: "8px",
+                    display: "block",
+                  }}
+                />
+                <Image
+                  id="leftStickyImage"
+                  src="https://ik.imagekit.io/mq90sdk8y/myselfraj/acri.png?updatedAt=17069618344912"
+                  alt="Deliver quality applications with Grapdevs Technologies"
+                  width={0}
+                  sizes="100vw"
+                  height={300}
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "contain",
+                    borderRadius: "8px",
+                    display: "none",
+                  }}
+                  loading="lazy"
+                />
+              </div>
             </div>
           </div>
           <div className="md:max-w-[500px] md:mt-0 mt-14 ">
+            <video
+              src="/bugspoon.mp4"
+              className="md:hidden block"
+              muted
+              autoPlay
+              playsInline
+              loop
+              style={{
+                width: "100%",
+                height: "auto",
+                objectFit: "contain",
+                borderRadius: "8px",
+              }}
+            />
+            <div
+              className="pt-7 pb-14 md:pb-[250px] md:pt-[290px]"
+              id="bugspoon"
+              style={{ opacity: opacityBug }}
+            >
+              <h3 className="mb-[14px] text-3xl md:text-[34px] font-[600] leading-[110%]">
+                BugSpoon Chrome Extension
+              </h3>
+              <p className="text-[18px]">
+                BugSpoon improves developer workflow with a Chrome Extension and
+                DevTools panel that captures console logs and network traces,
+                helping you share, trace and get alerts of bug reports faster in reproducible scenarios.
+              </p>
+              <div className="grid gap-3 grid-cols-3 mt-8">
+                <div>
+                  <div className="text-[16px] text-gray-700 font-bold">Project</div>
+                  <div className="text-[18px] text-black pt-1">BugSpoon</div>
+                </div>
+                <div>
+                  <div className="text-[16px] text-gray-700 font-bold">Role</div>
+                  <div className="text-[18px] text-black pt-1">Chrome Extension & DevTools</div>
+                </div>
+                <div>
+                  <div className="text-[16px] text-gray-700 font-bold">Date</div>
+                  <div className="text-[18px] text-black pt-1">2025</div>
+                </div>
+              </div>
+              <div className="mt-4">
+                <div className="text-[16px] text-gray-700 font-bold">Tech</div>
+                <div className="text-[18px] text-black pt-1">JavaScript, Chrome Extension, Network+</div>
+              </div>
+              <div className="mt-6">
+                <a
+                  href="/bugspoon-chrome-extension"
+                  className="btn btn-sm rounded-full bg-siteDefaultColor text-white hover:opacity-90"
+                >
+                  Install now
+                </a>
+              </div>
+            </div>
             <Image
               id="leftImage"
               src="https://ik.imagekit.io/mq90sdk8y/myselfraj/acri.png?updatedAt=17069618344912"

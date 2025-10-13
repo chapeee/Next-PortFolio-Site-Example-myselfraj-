@@ -195,9 +195,66 @@ export default function Projects() {
           </div>
         </div>
       </div>
-      <div className="bg-[#d7eef0] z-[9] relative w-full md:pt-[120px] pt-[50px]">
-        {" "}
-      </div>
+        <div className="z-[9]  bg-[#d7eef0] relative  bg-gray-100">
+          <div className="bg-white text-black pt-[100px] pb-[100px]">
+            <div className="container m-auto p-5 pt-0 pb-0">
+              <div className="flex lg:justify-between flex-col lg:flex-row">
+                <div className="max-w-[750px]">
+                  <span className="text-[18px] text-gray-700">Featured Tooling</span>
+                  <div className="text-4xl lg:text-[52px] font-medium  text-left" style={{ lineHeight: "120%" }}>
+                    BugSpoon Chrome Extension:
+                  </div>
+                  <p className="mt-5 text-[18px] text-gray-700">
+                    BugSpoon improves developer workflow with a Chrome Extension and DevTools panel that captures console logs and network traces, helping you share, trace and get alerts of bug reports faster in reproducible scenarios.
+                  </p>
+
+                  <div className="mt-14">
+                    <div className="flex gap-4 md:gap-11 flex-wrap">
+                      <div>
+                        <div>
+                          <div className="text-[18px] text-gray-600">Project</div>
+                          <a href="https://github.com/chapeee/bugspoon-network-plus" className="text-[20px] pt-1 text-gray-800 underline">BugSpoon</a>
+                        </div>
+                      </div>
+                      <div>
+                        <div>
+                          <div className="text-[18px] text-gray-600">Role</div>
+                          <div className="text-[20px] pt-1 text-gray-800">Chrome Extension & DevTools</div>
+                        </div>
+                      </div>
+                      <div>
+                        <div>
+                          <div className="text-[18px] text-gray-600">Date</div>
+                          <div className="text-[20px] pt-1 text-gray-800">2025</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="mt-6 flex gap-4">
+                      <a href="/bugspoon-chrome-extension" className="btn btn-sm rounded-full bg-siteDefaultColor text-white hover:opacity-90">Learn More</a>
+                 <a href="https://github.com/chapeee/bugspoon-network-plus" target="_blank" className="btn btn-sm rounded-full bg-siteDefaultColor text-white hover:opacity-90">Install now</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex flex-wrap lg:flex-nowrap lg:flex-col flex-row lg:gap-o gap-4 lg:gap-0 items-start lg:items-end lg:mt-0 mt-10">
+                  <div className="text-[18px] bg-transparent text-gray-700 border-gray-500 border  p-2 pl-5 pr-5 rounded-full">
+                    Javascript
+                  </div>
+                  <div className="text-[18px] lg:mt-5 bg-transparent text-gray-700 border-gray-500 border  p-2 pl-5 pr-5 rounded-full">
+                    Chrome Extension
+                  </div>
+                  <div className="text-[18px] lg:mt-5 bg-transparent text-gray-700 border-gray-500 border  p-2 pl-5 pr-5 rounded-full">
+                    Network+
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+       
+        </div>
+      
+      <div className="bg-[#d7eef0] z-[9] relative w-full pt-0 md:pt-[50px]"></div>
       <div className=" z-[9] relative w-full m-auto  bg-gray-100">
         <div className="bg-[#d7eef0] w-full  max-[350px]:h-[60em] max-[370px]:h-[55em]  max-[450px]:h-[55em] h-[47em] sm:h-[48em]  md:h-[46em] absolute"></div>
         <div className="z-[9] relative">
@@ -205,24 +262,9 @@ export default function Projects() {
             <div className="container m-auto p-5 pt-0 pb-0">
               <div className="flex lg:justify-between flex-col lg:flex-row">
                 <div className="max-w-[750px]">
-                  <span className="text-[18px] text-gray-700">
-                    Client&quot;s Project
-                  </span>
-                  <div
-                    className="text-4xl lg:text-[52px] font-medium  text-left"
-                    style={{ lineHeight: "120%" }}
-                  >
-                    Water harvesting:
-                  </div>
-                  <p className="mt-5 text-[18px] text-gray-600">
-                    Develop a user-friendly Internet of Things (IoT) web app for
-                    water harvesting. Client can monitor and evaluate water
-                    savings in specific zones like bathrooms, gardens, and
-                    pools. The application calculates total water savings,
-                    assigning rankings to assess its suitability for reuse in
-                    different areas.
-                  </p>
-
+                  <span className="text-[18px] text-gray-700">Client&quot;s Project</span>
+                  <div className="text-4xl lg:text-[52px] font-medium  text-left" style={{ lineHeight: "120%" }}>Water harvesting:</div>
+                  <p className="mt-5 text-[18px] text-gray-600">Develop a user-friendly Internet of Things (IoT) web app for water harvesting. Client can monitor and evaluate water savings in specific zones like bathrooms, gardens, and pools. The application calculates total water savings, assigning rankings to assess its suitability for reuse in different areas.</p>
                   <div className="mt-14">
                     <div className="flex gap-4 md:gap-11 flex-wrap">
                       <div>
