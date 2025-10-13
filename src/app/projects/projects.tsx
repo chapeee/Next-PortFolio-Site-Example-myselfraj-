@@ -202,7 +202,7 @@ export default function Projects() {
                 <div className="max-w-[750px]">
                   <span className="text-[18px] text-gray-700">Featured Tooling</span>
                   <div className="text-4xl lg:text-[52px] font-medium  text-left" style={{ lineHeight: "120%" }}>
-                    BugSpoon Chrome Extension:
+                   Networ+, BugSpoon Chrome Extension:
                   </div>
                   <p className="mt-5 text-[18px] text-gray-700">
                     BugSpoon improves developer workflow with a Chrome Extension and DevTools panel that captures console logs and network traces, helping you share, trace and get alerts of bug reports faster in reproducible scenarios.
