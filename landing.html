@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BugSpoon – Network Intelligence for DevTools</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --alice-blue: #e8f1f2ff;
+        --celadon: #b3efb2ff;
+        --cambridge-blue: #7a9e7eff;
+        --brunswick-green: #31493cff;
+        --rich-black: #001a23ff;
+      }
+      
+      body {
+        font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      }
+      
+      .gradient-bg {
+        background: linear-gradient(135deg, var(--alice-blue) 0%, var(--celadon) 50%, var(--cambridge-blue) 100%);
+      }
+      
+      .card-hover {
+        transition: all 0.3s ease;
+      }
+      
+      .card-hover:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 40px rgba(0, 26, 35, 0.1);
+      }
+      
+      .text-gradient {
+        background: linear-gradient(135deg, var(--brunswick-green), var(--cambridge-blue));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-rich-black">
+    <!-- Header -->
+    <header class="border-b border-alice-blue/30 bg-white/80 backdrop-blur-sm sticky top-0 z-50">
+      <div class="mx-auto flex w-full max-w-7xl items-center justify-between px-6 py-6 sm:px-8">
+        <div class="flex items-center gap-4">
+          <div class="flex h-12 w-12 items-center justify-center rounded-2xl gradient-bg text-2xl shadow-lg">
+            🪱
+          </div>
+          <div>
+            <p class="text-xs font-bold uppercase tracking-[0.35em] text-cambridge-blue">BugSpoon</p>
+            <h1 class="text-xl font-bold tracking-tight text-rich-black">Network+ DevTools Extension</h1>
+          </div>
+        </div>
+        <nav class="hidden items-center gap-8 text-sm font-medium text-brunswick-green md:flex">
+          <a href="#features" class="transition hover:text-cambridge-blue">Features</a>
+          <a href="#workflow" class="transition hover:text-cambridge-blue">Workflow</a>
+          <a href="#comparison" class="transition hover:text-cambridge-blue">Comparison</a>
+          <a
+            href="#cta"
+            class="rounded-full bg-brunswick-green px-6 py-2.5 text-white transition hover:bg-rich-black shadow-lg hover:shadow-xl"
+          >
+            Get BugSpoon
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="space-y-24 py-16 sm:py-20">
+      <!-- Hero Section -->
+      <section class="mx-auto flex w-full max-w-7xl flex-col gap-16 px-6 sm:px-8 lg:flex-row lg:gap-20">
+        <div class="w-full space-y-8">
+          <div class="inline-flex items-center gap-2 rounded-full border border-celadon/50 bg-celadon/20 px-6 py-3 text-xs font-bold uppercase tracking-[0.3em] text-brunswick-green">
+            Built for API-first teams
+          </div>
+          <h2 class="text-4xl font-bold leading-tight sm:text-5xl lg:text-6xl text-gradient">
+            We document real stories through compelling API visuals.
+          </h2>
+          <p class="text-lg leading-relaxed text-brunswick-green/80 sm:text-xl">
+            BugSpoon captures every request in the page, enriches it with schema intelligence, security insights, CORS analysis, and powerful exports. Debugging, documenting, and collaborating on APIs finally feels effortless.
+          </p>
+          <div class="flex flex-col gap-4 sm:flex-row">
+            <a
+              href="https://github.com/chapeee/BugSpoon"
+              target="_blank"
+              class="inline-flex items-center justify-center rounded-full bg-brunswick-green px-10 py-4 text-base font-semibold text-white shadow-lg transition hover:bg-rich-black hover:shadow-xl"
+            >
+              Explore the repo
+            </a>
+            <a
+              href="#comparison"
+              class="inline-flex items-center justify-center rounded-full border-2 border-cambridge-blue px-10 py-4 text-base font-semibold text-brunswick-green transition hover:bg-cambridge-blue hover:text-white"
+            >
+              See how we compare
+            </a>
+          </div>
+        </div>
+        
+        <!-- Feature Cards -->
+        <div class="w-full">
+          <div class="rounded-3xl gradient-bg p-8 shadow-2xl ring-1 ring-celadon/30 sm:p-10 lg:p-12">
+            <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              <div class="group">
+                <article class="card-hover flex h-full flex-col gap-5 rounded-2xl bg-white/90 p-6 shadow-lg ring-1 ring-white/60 backdrop-blur-sm">
+                  <span class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-cambridge-blue/10 text-cambridge-blue ring-1 ring-cambridge-blue/30">
+                    <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6">
+                      <path
+                        d="M6 8.5C6 6.567 7.567 5 9.5 5h6.75C17.439 5 18 5.561 18 6.25V9h4.5C24.433 9 26 10.567 26 12.5v3.75C26 17.439 25.439 18 24.75 18H22v2.75C22 22.439 21.439 23 20.75 23h-3.5l-4.4 4.4c-.634.634-1.85.185-1.85-.712V23H9.5C7.567 23 6 21.433 6 19.5V8.5Z"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M12 12h7M12 15h5M12 18h3"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                  <div class="space-y-3">
+                    <p class="text-xs font-bold uppercase tracking-[0.35em] text-cambridge-blue">Schema-Aware Monitoring</p>
+                    <p class="text-sm font-medium leading-relaxed text-brunswick-green/80">
+                      Automatic JSON schema detection, human-friendly comparisons, and drift alerts spotlight contract changes before they hit production.
+                    </p>
+                  </div>
+                </article>
+              </div>
+              <div class="group">
+                <article class="card-hover flex h-full flex-col gap-5 rounded-2xl bg-white/90 p-6 shadow-lg ring-1 ring-white/60 backdrop-blur-sm">
+                  <span class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-celadon/20 text-brunswick-green ring-1 ring-celadon/40">
+                    <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6">
+                      <path
+                        d="M9 7.5A1.5 1.5 0 0 1 10.5 6h11A1.5 1.5 0 0 1 23 7.5v17a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 9 24.5v-17Z"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M13 10h6M13 14h4M16 22c.828 0 1.5-.672 1.5-1.5S16.828 19 16 19s-1.5.672-1.5 1.5S15.172 22 16 22Z"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="m9 19.5-2.5 2.5"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                  <div class="space-y-3">
+                    <p class="text-xs font-bold uppercase tracking-[0.35em] text-cambridge-blue">Response Intelligence</p>
+                    <p class="text-sm font-medium leading-relaxed text-brunswick-green/80">
+                      Rapid previews, replay tooling, and export-ready snippets keep teammates aligned with curated replays and shareable assets.
+                    </p>
+                  </div>
+                </article>
+              </div>
+              <div class="group">
+                <article class="card-hover flex h-full flex-col gap-5 rounded-2xl bg-white/90 p-6 shadow-lg ring-1 ring-white/60 backdrop-blur-sm">
+                  <span class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-rich-black/10 text-rich-black ring-1 ring-rich-black/30">
+                    <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6">
+                      <path
+                        d="M16 5c-2.628 0-4.667 1.824-4.667 4.065 0 2.103 1.62 3.81 3.8 4.047a1 1 0 0 1 .867.99v.233a1 1 0 0 1-.618.927C12.41 15.92 10 18.696 10 22v.5a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5V22c0-3.304-2.41-6.08-5.381-6.668a1 1 0 0 1-.619-.927v-.233a1 1 0 0 1 .868-.99c2.179-.238 3.8-1.944 3.8-4.047C20.667 6.824 18.628 5 16 5Z"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="m7.5 15 1.25-1.25M24.5 15l-1.25-1.25"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M6 21c0 2.25 1.5 4.5 3.75 4.5"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M26 21c0 2.25-1.5 4.5-3.75 4.5"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                  <div class="space-y-3">
+                    <p class="text-xs font-bold uppercase tracking-[0.35em] text-cambridge-blue">Security &amp; Governance</p>
+                    <p class="text-sm font-medium leading-relaxed text-brunswick-green/80">
+                      Built-in secret scanning, policy reminders, and CORS insights safeguard sensitive data while illuminating cross-origin risk.
+                    </p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section id="features" class="mx-auto w-full max-w-7xl space-y-16 px-6 sm:px-8">
+        <div class="max-w-3xl space-y-6">
+          <p class="text-xs font-bold uppercase tracking-[0.3em] text-cambridge-blue">Superpowers</p>
+          <h3 class="text-3xl font-bold sm:text-4xl text-gradient">Everything you wish the Network panel had.</h3>
+          <p class="text-base leading-relaxed text-brunswick-green/80">
+            BugSpoon keeps the familiar request timeline but layers on automation, context, and collaboration features that turn network debugging into an insight engine.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+          <article class="card-hover space-y-4 rounded-3xl border border-alice-blue/50 bg-white p-8 shadow-lg">
+            <h4 class="text-xl font-bold text-brunswick-green">Schema automation</h4>
+            <p class="text-sm leading-relaxed text-brunswick-green/80">
+              Generate JSON Schema and TypeScript types from any response, compare revisions, and explore visual schema history.
+            </p>
+          </article>
+          <article class="card-hover space-y-4 rounded-3xl border border-alice-blue/50 bg-white p-8 shadow-lg">
+            <h4 class="text-xl font-bold text-brunswick-green">Schema change alerts</h4>
+            <p class="text-sm leading-relaxed text-brunswick-green/80">
+              Trigger Chrome notifications when responses change shape so backend regressions surface instantly during feature work.
+            </p>
+          </article>
+          <article class="card-hover space-y-4 rounded-3xl border border-alice-blue/50 bg-white p-8 shadow-lg">
+            <h4 class="text-xl font-bold text-brunswick-green">Insightful exports</h4>
+            <p class="text-sm leading-relaxed text-brunswick-green/80">
+              Export to PDF, HTML, or sharable snippets, making it simple to communicate findings with anyone on your team.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Workflow Section -->
+      <section id="workflow" class="mx-auto w-full max-w-7xl space-y-16 px-6 sm:px-8">
+        <div class="flex flex-col gap-12 lg:flex-row lg:items-center">
+          <div class="flex-1 space-y-6">
+            <p class="text-xs font-bold uppercase tracking-[0.3em] text-cambridge-blue">Workflow</p>
+            <h3 class="text-3xl font-bold sm:text-4xl text-gradient">Capture, enrich, and share in minutes.</h3>
+            <p class="text-base leading-relaxed text-brunswick-green/80">
+              A purpose-built flow lets you capture requests, surface schema and security insights, collaborate with your team, and export polished documentation without leaving the panel.
+            </p>
+          </div>
+          <div class="flex flex-1 flex-col gap-6">
+            <div class="card-hover rounded-3xl border border-alice-blue/50 bg-white p-8 shadow-lg">
+              <h4 class="text-lg font-bold text-brunswick-green">1. Capture instantly</h4>
+              <p class="mt-3 text-sm leading-relaxed text-brunswick-green/80">
+                Open the BugSpoon panel to watch every request populate with real-time performance data.
+              </p>
+            </div>
+            <div class="card-hover rounded-3xl border border-alice-blue/50 bg-white p-8 shadow-lg">
+              <h4 class="text-lg font-bold text-brunswick-green">2. Enrich automatically</h4>
+              <p class="mt-3 text-sm leading-relaxed text-brunswick-green/80">
+                Schema intelligence, security scans, and CORS guidance activate without configuration.
+              </p>
+            </div>
+            <div class="card-hover rounded-3xl border border-alice-blue/50 bg-white p-8 shadow-lg">
+              <h4 class="text-lg font-bold text-brunswick-green">3. Share effortlessly</h4>
+              <p class="mt-3 text-sm leading-relaxed text-brunswick-green/80">
+                Export annotated captures and share confident recommendations with teammates and clients.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Comparison Section -->
+      <section id="comparison" class="mx-auto w-full max-w-7xl space-y-16 px-6 sm:px-8">
+        <div class="max-w-3xl space-y-6">
+          <p class="text-xs font-bold uppercase tracking-[0.3em] text-cambridge-blue">Comparison</p>
+          <h3 class="text-3xl font-bold sm:text-4xl text-gradient">Why teams switch from the default Network panel.</h3>
+          <p class="text-base leading-relaxed text-brunswick-green/80">
+            BugSpoon delivers a higher signal-to-noise ratio with purpose-built intelligence for API-first teams.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
+          <div class="card-hover space-y-6 rounded-3xl border border-celadon/50 bg-white p-8 shadow-lg">
+            <h4 class="text-lg font-bold text-brunswick-green">BugSpoon</h4>
+            <ul class="space-y-4 text-sm text-brunswick-green/80">
+              <li class="flex items-start gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-cambridge-blue"></span>Schema awareness, change detection, and TypeScript generation.</li>
+              <li class="flex items-start gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-cambridge-blue"></span>Security analysis for secrets, tokens, and risky CORS headers.</li>
+              <li class="flex items-start gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-cambridge-blue"></span>Export-ready documentation and shareable cURL, fetch, and PDF outputs.</li>
+            </ul>
+          </div>
+          <div class="space-y-6 rounded-3xl border border-alice-blue/50 bg-alice-blue/30 p-8 shadow-inner">
+            <h4 class="text-lg font-bold text-brunswick-green/60">Chrome DevTools Network</h4>
+            <ul class="space-y-4 text-sm text-brunswick-green/60">
+              <li class="flex items-start gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-cambridge-blue/40"></span>Manual diffing of JSON payloads with no schema tracking.</li>
+              <li class="flex items-start gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-cambridge-blue/40"></span>No automated security scanning or CORS guidance.</li>
+              <li class="flex items-start gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-cambridge-blue/40"></span>Sharing requires copy-pasting raw payloads or screenshots.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="cta" class="border-t border-alice-blue/30 bg-gradient-to-br from-alice-blue/20 to-celadon/20">
+      <div class="mx-auto flex w-full max-w-7xl flex-col items-start gap-10 px-6 py-20 sm:px-8 sm:py-24 lg:flex-row lg:items-center lg:justify-between">
+        <div class="space-y-6">
+          <p class="text-xs font-bold uppercase tracking-[0.3em] text-cambridge-blue">Ready to capture real stories?</p>
+          <h4 class="text-3xl font-bold sm:text-4xl text-gradient">Bring BugSpoon into your DevTools workflow.</h4>
+          <p class="max-w-xl text-base leading-relaxed text-brunswick-green/80">
+            Install the extension, explore your network traffic with purpose-built insights, and empower your team with a source of truth for APIs.
+          </p>
+        </div>
+        <div class="flex flex-col gap-4 sm:flex-row">
+          <a
+            href="https://github.com/chapeee/BugSpoon"
+            target="_blank"
+            class="inline-flex items-center justify-center rounded-full bg-brunswick-green px-10 py-4 text-base font-semibold text-white shadow-lg transition hover:bg-rich-black hover:shadow-xl"
+          >
+            Get the extension
+          </a>
+          <a
+            href="mailto:hello@bugspoon.dev"
+            class="inline-flex items-center justify-center rounded-full border-2 border-cambridge-blue px-10 py-4 text-base font-semibold text-brunswick-green transition hover:bg-cambridge-blue hover:text-white"
+          >
+            Book a walkthrough
+          </a>
+        </div>
+      </div>
+      <div class="border-t border-alice-blue/30 bg-white/80 backdrop-blur-sm">
+        <div class="mx-auto flex w-full max-w-7xl flex-col-reverse items-center justify-between gap-6 px-6 py-8 text-sm text-brunswick-green/60 sm:flex-row sm:px-8">
+          <p>© <span class="font-bold text-brunswick-green">BugSpoon</span> 2024. All rights reserved.</p>
+          <div class="flex items-center gap-6">
+            <a href="mailto:support@bugspoon.dev" class="transition hover:text-cambridge-blue">Support</a>
+            <a href="#" class="transition hover:text-cambridge-blue">Privacy</a>
+            <a href="#" class="transition hover:text-cambridge-blue">Terms</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
