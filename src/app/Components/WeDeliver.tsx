@@ -167,7 +167,7 @@ export default function WeDeliver() {
               style={{ opacity: opacityBug }}
             >
               <h3 className="mb-[14px] text-3xl md:text-[34px] font-[600] leading-[110%]">
-                BugSpoon Chrome Extension
+                Network+, BugSpoon Chrome Extension
               </h3>
               <p className="text-[18px]">
                 BugSpoon improves developer workflow with a Chrome Extension and
